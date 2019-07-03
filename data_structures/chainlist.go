@@ -1,4 +1,4 @@
-package algorithms
+package data_structures
 
 type Node struct {
 	data interface{}
@@ -7,9 +7,11 @@ type Node struct {
 
 type LinkedList struct {
 	head *Node
+	current *Node
 }
 
-func NewLinkedList(data ...interface{}) *LinkedList {
+//make a last-to-head loop chain list
+func NewLoopLinkedList(data ...interface{}) *LinkedList {
 	dataSlice := append([]interface{}{}, data...)
 	nodeSlice := make([]*Node, len(dataSlice))
 	for i := len(dataSlice) - 1; i >= 0; i--{
@@ -19,15 +21,44 @@ func NewLinkedList(data ...interface{}) *LinkedList {
 		}
 	}
 	nodeSlice[len(dataSlice) - 1].next = nodeSlice[0]
-	return &LinkedList{nodeSlice[0]}
+	var current Node
+	current = *nodeSlice[0]
+	return &LinkedList{nodeSlice[0], &current}
 }
 
-func (list *LinkedList) InsertFirst(i interface{}) {
-	data := &Node{data: i}
-	if list.head != nil {
-		data.next = list.head
+//make an un-loop chain list
+func NewLinkedList(data ...interface{}) *LinkedList {
+	dataSlice := append([]interface{}{}, data...)
+	nodeSlice := make([]*Node, len(dataSlice))
+	for i := len(dataSlice) - 1; i >= 0; i--{
+		nodeSlice[i] = &Node{data:dataSlice[i]}
+		if i + 1 < len(dataSlice) {
+			nodeSlice[i].next = nodeSlice[i + 1]
+		}
 	}
-	list.head = data
+	return &LinkedList{nodeSlice[0], nodeSlice[0]}
+}
+
+//make list.current a node copy that point to the next node of current node
+func (list LinkedList) Next() bool {
+	if list.current == nil {
+		return false
+	}
+	*list.current = *list.current.next
+	return true
+}
+
+//make data a node, and insert it into the list before the first node,
+//and let it be head.
+//this method is only for un-loop chain list.
+func (list *LinkedList) InsertFirst(data interface{}) {
+	if list.head == nil {
+		list.head = &Node{data:data, next:nil}
+		list.current = &Node{data:data, next:nil}
+		return
+	}
+	node := Node{data:data, next:list.head}
+	*list.head = node
 }
 
 func (list *LinkedList) InsertLast(i interface{}) {
