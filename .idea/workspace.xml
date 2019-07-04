@@ -20,8 +20,8 @@
               <entry file="file://$PROJECT_DIR$/readme.md">
                 <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
                   <state split_layout="SPLIT">
-                    <first_editor relative-caret-position="777">
-                      <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
+                    <first_editor relative-caret-position="342">
+                      <caret line="19" selection-start-line="19" selection-end-line="19" />
                     </first_editor>
                     <second_editor>
                       <markdownNavigatorState />
@@ -520,8 +520,8 @@
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="777">
-            <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
+          <first_editor relative-caret-position="342">
+            <caret line="19" selection-start-line="19" selection-end-line="19" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />

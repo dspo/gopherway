@@ -16,7 +16,8 @@
 * [错误处理](https://www.runoob.com/go/go-error-handling.html)
 
 ## [Data structures in Go](data_structures)
-[PDF eBook](data_structures/go-data-structures-and-algorithms.pdf) <- 如无英文阅读障碍，可直接阅读电子书
+![](https://img.shields.io/badge/download-89-brightgreen.svg)  
+[PDF eBook - en](data_structures/go-data-structures-and-algorithms.pdf)   <- 如无英文阅读障碍，可直接阅读电子书  
 * basic types
     - number
     - bool
