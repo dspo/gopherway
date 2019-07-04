@@ -32,6 +32,7 @@
 * [ ] graph 
 
 ## [Algorithms in Go](algorithms)
+### Basic Algorithms
 * [Binary Search](algorithms/binary_search.go)  
 * [Sort Algorithms](algorithms/sort_algorithms.go) Based on sort.Interface  
     - [x] Bubble Sort
@@ -40,7 +41,7 @@
     - [x] Insertion Sort (see official implementation here)
     - [x] Heap Sort (see official implementation here)
 
-## Classic Problems
+### Classic Problems
 * 八皇后问题
 * Josephus问题
 * 汉诺塔问题
@@ -108,8 +109,9 @@
 * astaxie [build-web-application-with-golang](https://github.com/astaxie/build-web-application-with-golang)
 * 《Go高级编程》 [在线](https://github.com/chai2010/advanced-go-programming-book) [购买](https://www.epubit.com/book/detail/40090) 
 
-## Golang Articles
+## **Go**od Articles
 * 知乎专栏文章 [知乎社区核心业务 Golang 化实践](https://zhuanlan.zhihu.com/p/48039838) xlzd  
+* 博客文章 [如何掌握所有的程序语言](http://www.yinwang.org/blog-cn/2017/07/06/master-pl) 王垠
 
 ## Go Frameworks & Libs
 * 最流行第三方HTTP库 [julienschmidt/httprouter](https://github.com/julienschmidt/httprouter)
