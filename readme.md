@@ -109,11 +109,17 @@
 * astaxie [build-web-application-with-golang](https://github.com/astaxie/build-web-application-with-golang)
 * 《Go高级编程》 [在线](https://github.com/chai2010/advanced-go-programming-book) [购买](https://www.epubit.com/book/detail/40090) 
 
-## **Go**od Articles
-* 知乎专栏文章 [知乎社区核心业务 Golang 化实践](https://zhuanlan.zhihu.com/p/48039838) xlzd  
-* 博客文章 [如何掌握所有的程序语言](http://www.yinwang.org/blog-cn/2017/07/06/master-pl) 王垠
+## Good Articles
+### 工业实践 
+* [知乎社区核心业务Golang化实践](https://zhuanlan.zhihu.com/p/48039838) xlzd - 知乎  
+* [知乎推荐系统的实践及重构之路](https://zhuanlan.zhihu.com/p/53130925) 孙付伟 - 知乎
+### 方法论
+* [如何掌握所有的程序语言](http://www.yinwang.org/blog-cn/2017/07/06/master-pl) 王垠   
+### 细节
+* [对于递归有没有什么好的理解方法？](https://www.zhihu.com/question/31412436/answer/683820765) - 帅地的回答 - 知乎  
 
-## Go Frameworks & Libs
+
+## Third Libs & Frameworks
 * 最流行第三方HTTP库 [julienschmidt/httprouter](https://github.com/julienschmidt/httprouter)
 * bilibili 开源微服务框架 [bilibili/Kratos](https://github.com/bilibili/kratos)
 * Go开发工程师招聘启示提及最多的Web及微服务开发框架 [gin-gonic/gin](https://github.com/gin-gonic/gin)
