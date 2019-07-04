@@ -48,20 +48,9 @@ func SelectionSort(li sort.Interface) {
 	}
 }
 
-func ChenSort(li sort.Interface) {
-	i := 0
-	for i < li.Len() - 1{
-		for j := i + 1; j < li.Len(); j++ {
-			if li.Less(j, i) {
-				li.Swap(i, j)
-				i--
-				break
-			}
-		}
-		i++
-	}
-}
-
+//Insertion Sort:
+//maintaining a sorted child list at lower side,
+//insert new element into the child list at the correct location.
 func InsertionSort(li sort.Interface) {
 	for i := 1; i < li.Len(); i++ {
 		for j := i; j > 0 && li.Less(j, j - 1); j-- {

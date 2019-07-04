@@ -19,27 +19,18 @@ func TestNewLoopLinkedList(t *testing.T) {
 
 func TestLinkedList_Next(t *testing.T) {
 	list := NewLoopLinkedList("a", "b", "c", "d", "e")
-	if list.current.data != "a" {
-		t.Error("current node error")
+	if list.cursor.data != "a" {
+		t.Error("cursor node error")
 	}
 	list.Next()
-	if list.current.data != "b" {
+	if list.cursor.data != "b" {
 		t.Error("Next() not move the pointer to next")
 	}
 	if list.head.data != "a" {
 		t.Error("the head moved but it should not move")
 	}
 	list.Next(); list.Next(); list.Next(); list.Next()
-	if list.current.data != "a" {
+	if list.cursor.data != "a" {
 		t.Error("Next() not move the pointer to loop list head when the last point at the last")
 	}
-}
-
-func TestLinkedList_InsertFirst(t *testing.T) {
-	list := &LinkedList{head:nil, current:nil}
-	list.InsertFirst("b")
-	t.Log(list.head.data, list.current.data)
-
-	list.InsertFirst("a")
-	t.Log(list.head.data, list.current.data)
 }
