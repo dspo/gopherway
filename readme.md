@@ -1,34 +1,22 @@
 # Go Notes - Gopher Way
 
 ## [Go Syntax](go_syntax)
-* var
-* value
-* types
-    - int
-    - float
-    - byte
-    - string
-    - array
-    - slice
-    - []bytes
-    - pointer
-    - map
-    - struct
-    - interface
-* conditions and branches
-* loop
-    - for [index]
-    - for [condition]
-    - switch-case
-* function
-* struct
-    - method
-* error
-* goroutine
-* channel
-    - select
+以下链接指向菜鸟教程，但不包含教程的全部内容
+* [基础语法](https://www.runoob.com/go/go-basic-syntax.html)
+* [数据类型](https://www.runoob.com/go/go-data-types.html)
+* [变量](https://www.runoob.com/go/go-variables.html)
+* [条件语句](https://www.runoob.com/go/go-decision-making.html)
+* [循环语句](https://www.runoob.com/go/go-loops.html)
+* [函数](https://www.runoob.com/go/go-functions.html)
+* [数组](https://www.runoob.com/go/go-arrays.html) [切片](https://www.runoob.com/go/go-slice.html)
+* [指针](https://www.runoob.com/go/go-pointers.html)
+* [结构体](https://www.runoob.com/go/go-structures.html)
+* [map](https://www.runoob.com/go/go-map.html)
+* [接口](https://www.runoob.com/go/go-interfaces.html)
+* [错误处理](https://www.runoob.com/go/go-error-handling.html)
 
 ## [Data structures in Go](data_structures)
+[PDF eBook](data_structures/go-data-structures-and-algorithms.pdf) <- 如无英文阅读障碍，可直接阅读电子书
 * basic types
     - number
     - bool
@@ -102,11 +90,33 @@
     * benchmark
 * data streams
 * reflex
-## Practice
+
+## Practice & Advices
 * go env management
 * go build
 * go project management
-## go in action
-### stream video server web application
-### distributed storage web application
-### cron tab by go
+
+## Go in action & Learning source
+### 入门
+* 《Go程序设计语言》 [京东](https://item.jd.com/12187988.html)
+### 进阶
+* 幕课网 [Go语言实战流媒体视频网站](https://coding.imooc.com/learn/list/227.html)
+* 幕课网 [Go实战仿百度云盘 实现企业级分布式云存储系统](https://coding.imooc.com/learn/list/323.html) 
+* 幕课网 [Go语言开发分布式任务调度 轻松搞定高性能Crontab](https://coding.imooc.com/learn/list/281.html)
+* astaxie [go-best-practice](https://github.com/astaxie/go-best-practice)
+* astaxie [build-web-application-with-golang](https://github.com/astaxie/build-web-application-with-golang)
+* 《Go高级编程》 [在线](https://github.com/chai2010/advanced-go-programming-book) [购买](https://www.epubit.com/book/detail/40090) 
+
+## Golang Articles
+* 知乎专栏文章 [知乎社区核心业务 Golang 化实践](https://zhuanlan.zhihu.com/p/48039838) xlzd  
+
+## Go Frameworks & Libs
+* 最流行第三方HTTP库 [julienschmidt/httprouter](https://github.com/julienschmidt/httprouter)
+* bilibili 开源微服务框架 [bilibili/Kratos](https://github.com/bilibili/kratos)
+* Go开发工程师招聘启示提及最多的Web及微服务开发框架 [gin-gonic/gin](https://github.com/gin-gonic/gin)
+* 一站式Web开发框架 [astaxie/beego](github.com/astaxie/beego) <- Go语言中的Django  
+* Go语言UI库及桌面程序开发框架 [sciter-sdk/go-sciter](https://github.com/sciter-sdk/go-sciter)
+
+## Who use Go a ton in China
+百度BFE 七牛云 知乎 bilibili 360 今日头条 饿了么 滴滴  
+积梦 阿里巴巴 网易  

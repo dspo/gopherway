@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da64c8c8-b30d-4db9-b0bf-733cd9d89f12" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/notes/io.Reader-and-io.Writer.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +20,8 @@
               <entry file="file://$PROJECT_DIR$/readme.md">
                 <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
                   <state split_layout="SPLIT">
-                    <first_editor relative-caret-position="453">
-                      <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
+                    <first_editor relative-caret-position="777">
+                      <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
                     </first_editor>
                     <second_editor>
                       <markdownNavigatorState />
@@ -66,7 +64,7 @@
             <entry file="file://$PROJECT_DIR$/cookbook/interfaces/pipes.go">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="378">
-                  <caret line="24" column="12" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="24" selection-end-column="12" />
+                  <caret line="24" column="12" selection-start-line="23" selection-start-column="3" selection-end-line="24" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
@@ -503,7 +501,7 @@
     <entry file="file://$PROJECT_DIR$/cookbook/interfaces/pipes.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="24" column="12" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="24" selection-end-column="12" />
+          <caret line="24" column="12" selection-start-line="23" selection-start-column="3" selection-end-line="24" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -522,8 +520,8 @@
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="453">
-            <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
+          <first_editor relative-caret-position="777">
+            <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
