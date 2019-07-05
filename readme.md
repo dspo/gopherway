@@ -20,7 +20,7 @@
 [PDF eBook - en](data_structures/go-data-structures-and-algorithms.pdf)   <- 如无英文阅读障碍，可直接阅读电子书; 如文件过大不能在线阅读可打开页面后下载到本地阅读   
 
 
-## [Cookbook](cookbook)
+## [Cookbook](cookbook/go-briefer-cookbook.md)
 * [string & bytes](cookbook/bytestrings)
     - [bytes.Buffer](cookbook/bytestrings/buffers.go) -> 处理流数据时，用bytes.Buffer而不要用[]bytes 
     - [ioutil.ReadAll](cookbook/bytestrings/buffers.go) -> 读取io.Reader内容的一个快捷方式

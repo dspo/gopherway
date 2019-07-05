@@ -2,8 +2,8 @@
 
 ## 目录
 * [string & bytes](bytestrings)
-    - [bytes.Buffer](bytestrings/buffers.go) -> 处理流数据时，用bytes.Buffer而不要用[]bytes 
-    - [ioutil.ReadAll](bytestrings/buffers.go) -> 读取io.Reader内容的一个快捷方式
+    - [bytes.Buffer](bytestrings/buffer.go) -> 处理流数据时，用bytes.Buffer而不要用[]bytes 
+    - [ioutil.ReadAll](bytestrings/buffer.go) -> 读取io.Reader内容的一个快捷方式
     - conversion
     - regex
     - format
@@ -18,7 +18,7 @@
     - standard lib: strconv
     - number
 * core I/O interfaces
-    - [io.Reader & io.Writer](./go-briefer-cookbook.md#the-very-important-interfaces-in-Go:-io.Reader-&-io.Writer)
+    - [io.Reader & io.Writer](./go-briefer-cookbook.md#the-very-important-interfaces-in-go-ioreader--iowriter)
     - io.Closer
 * file & file system
     - directories & files
