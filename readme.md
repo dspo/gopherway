@@ -1,6 +1,6 @@
-# Go Notes - Gopher Way
+# Gopher Way
 
-## [Go Syntax](go_syntax)
+## [Go Syntax](go_syntax)|Go语法入门
 以下链接指向菜鸟教程，但不包含教程的全部内容
 * [基础语法](https://www.runoob.com/go/go-basic-syntax.html)
 * [数据类型](https://www.runoob.com/go/go-data-types.html)
@@ -15,63 +15,19 @@
 * [接口](https://www.runoob.com/go/go-interfaces.html)
 * [错误处理](https://www.runoob.com/go/go-error-handling.html)
 
-## [数据结构与算法简明教程：Go语言描述](data_structures/go-D&A-briefer-tutorial.md)
+## [Briefer Tutorial to Data Structures & Algorithms](data_structures/go-D&A-briefer-tutorial.md)|数据结构与算法简明教程 - Go语言描述
 ![](https://img.shields.io/badge/download-89-brightgreen.svg)  
 [PDF eBook - en](data_structures/go-data-structures-and-algorithms.pdf)   <- 如无英文阅读障碍，可直接阅读电子书; 如文件过大不能在线阅读可打开页面后下载到本地阅读   
-
+简明介绍常见数据结构与常用算法的Go语言实现。
 
 ## [Cookbook](cookbook/go-briefer-cookbook.md)
-* [string & bytes](cookbook/bytestrings)
-    - [bytes.Buffer](cookbook/bytestrings/buffers.go) -> 处理流数据时，用bytes.Buffer而不要用[]bytes 
-    - [ioutil.ReadAll](cookbook/bytestrings/buffers.go) -> 读取io.Reader内容的一个快捷方式
-    - conversion
-    - regex
-    - format
-* date and time
-    - time.Sleep 一定时间后再执行后面的程序
-    - time.After 要求某段程序至少要执行一定时间
-    - time.Since 计算时间差， time.Now().Sub(t)的快捷方式
-    - (t time.time).Sub 计算时间差
-    - time.Now 计算当前时间
-* type conversion
-    - string & bytes
-    - standard lib: strconv
-    - number
-* core I/O interfaces
-    - [io.Reader & io.Writer](notes/io.Reader-and-io.Writer.md)
-    - io.Closer
-* file & file system
-    - directories & files
-    - working with CSV
-    - working with JSON
-    - working with temporary files
-    - working with text template & HTML templates
-* context in Go
-* concurrency in Go
-* databases & storage
-    - db/sql
-    - mySQL
-    - postgreSQL
-    - SQLite
-    - Redis
-    - MongoDB
-* http client programing
-* http server programing
-* gRPC
-* micro-services for applications
-* distributed
-* testing
-    * testing
-    * benchmark
-* data streams
-* reflex
+涉及重要接口使用；正则表达式、常用字符串处理技巧；时间日期处理；文件操作与文件系统；
+channel, goroutine, context, reflex等Go语言核心特性；http客户端与服务端编程；gRPC；
+微服务；分布式；测试；数据流操作等。
 
-## Practice & Advices
-* go env management
-* go build
-* go project management
+## Go工业实践（暂未编写）
 
-## Go in action & Learning source
+## Learning source & Action
 ### 入门
 * 《Go程序设计语言》 [京东](https://item.jd.com/12187988.html)
 ### 进阶
@@ -83,14 +39,10 @@
 * 《Go高级编程》 [在线](https://github.com/chai2010/advanced-go-programming-book)|[购买](https://www.epubit.com/book/detail/40090) 
 
 ## Good Articles
-### 工业实践 
 * [知乎社区核心业务Golang化实践](https://zhuanlan.zhihu.com/p/48039838) xlzd - 知乎  
 * [知乎推荐系统的实践及重构之路](https://zhuanlan.zhihu.com/p/53130925) 孙付伟 - 知乎
-### 方法论
 * [如何掌握所有的程序语言](http://www.yinwang.org/blog-cn/2017/07/06/master-pl) 王垠   
-### 细节
 * [对于递归有没有什么好的理解方法？](https://www.zhihu.com/question/31412436/answer/683820765) - 帅地的回答 - 知乎  
-
 
 ## Third Libs & Frameworks
 * 最流行第三方HTTP库 [julienschmidt/httprouter](https://github.com/julienschmidt/httprouter)
@@ -99,6 +51,6 @@
 * 一站式Web开发框架 [astaxie/beego](github.com/astaxie/beego) <- Go语言中的Django  
 * Go语言UI库及桌面程序开发框架 [sciter-sdk/go-sciter](https://github.com/sciter-sdk/go-sciter)
 
-## Who use Go a ton in China
+## Who Use Go A Ton in China
 百度BFE 七牛云 知乎 bilibili 360 今日头条 饿了么 滴滴  
 积梦 阿里巴巴 网易  
