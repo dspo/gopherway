@@ -15,36 +15,10 @@
 * [接口](https://www.runoob.com/go/go-interfaces.html)
 * [错误处理](https://www.runoob.com/go/go-error-handling.html)
 
-## [Data structures in Go](data_structures)
+## [数据结构与算法简明教程：Go语言描述](data_structures/go-D&A-briefer-tutorial.md)
 ![](https://img.shields.io/badge/download-89-brightgreen.svg)  
 [PDF eBook - en](data_structures/go-data-structures-and-algorithms.pdf)   <- 如无英文阅读障碍，可直接阅读电子书; 如文件过大不能在线阅读可打开页面后下载到本地阅读   
-* [ ] basic types
-    - [ ] number
-    - [ ] bool
-    - [ ] byte & string
-* [ ] array & slice
-* [ ] map
-* [ ] pointer
-* [ ] struct
-* [ ] interface
-* [ ] list
-* [ ] tree
-* [ ] graph 
 
-## [Algorithms in Go](algorithms)
-### Basic Algorithms
-* [Binary Search](algorithms/binary_search.go)  
-* [Sort Algorithms](algorithms/sort_algorithms.go) Based on sort.Interface  
-    - [x] Bubble Sort
-    - [x] Short Bubble Sort
-    - [x] Selection Sort
-    - [x] Insertion Sort (see official implementation here)
-    - [x] Heap Sort (see official implementation here)
-
-### Classic Problems
-* 八皇后问题
-* Josephus问题
-* 汉诺塔问题
 
 ## [Cookbook](cookbook)
 * [string & bytes](cookbook/bytestrings)

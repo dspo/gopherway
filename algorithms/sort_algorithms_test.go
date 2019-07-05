@@ -66,15 +66,6 @@ func TestSelectionSort(t *testing.T) {
 	}
 }
 
-func TestChenSort(t *testing.T) {
-	forSorting := li
-	ChenSort(forSorting)
-	t.Log(forSorting)
-	t.Log(sortedLi)
-	if !forSorting.Equal(sortedLi){
-		t.Error("sort failed !")
-	}
-}
 
 func TestInsertionSort(t *testing.T) {
 	forSorting := li
@@ -104,13 +95,6 @@ func BenchmarkSelectionSort(b *testing.B) {
 	forSorting := li
 	for i := 0; i < b.N; i++ {
 		SelectionSort(forSorting)
-	}
-}
-
-func BenchmarkChenSort(b *testing.B) {
-	forSorting := li
-	for i := 0; i < b.N; i++{
-		ChenSort(forSorting)
 	}
 }
 

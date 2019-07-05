@@ -8,7 +8,7 @@ var (
 )
 
 func TestBinarySearchLoop(t *testing.T) {
-	index := BinarySearchLoop(is, item)
+	index, _ := BinarySearchLoop(is, item)
 	if index != 7 {
 		t.Error("search failed")
 	}
