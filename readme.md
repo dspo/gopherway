@@ -1,6 +1,6 @@
 # Gopher Way
 
-## [Go Syntax](go_syntax)|Go语法入门
+## [Go Syntax](go_syntax)
 以下链接指向菜鸟教程，但不包含教程的全部内容
 * [基础语法](https://www.runoob.com/go/go-basic-syntax.html)
 * [数据类型](https://www.runoob.com/go/go-data-types.html)
@@ -15,7 +15,7 @@
 * [接口](https://www.runoob.com/go/go-interfaces.html)
 * [错误处理](https://www.runoob.com/go/go-error-handling.html)
 
-## [Briefer Tutorial to Data Structures & Algorithms](data_structures/go-D&A-briefer-tutorial.md)|数据结构与算法简明教程 - Go语言描述
+## [Briefer Tutorial to Data Structures & Algorithms in Go](data_structures/go-D&A-briefer-tutorial.md)
 ![](https://img.shields.io/badge/download-89-brightgreen.svg)  
 [PDF eBook - en](data_structures/go-data-structures-and-algorithms.pdf)   <- 如无英文阅读障碍，可直接阅读电子书; 如文件过大不能在线阅读可打开页面后下载到本地阅读   
 简明介绍常见数据结构与常用算法的Go语言实现。
@@ -25,11 +25,13 @@
 channel, goroutine, context, reflex等Go语言核心特性；http客户端与服务端编程；gRPC；
 微服务；分布式；测试；数据流操作等。
 
-## Go工业实践（暂未编写）
+## Practice（nothing yet）
 
 ## Learning source & Action
 ### 入门
 * 《Go程序设计语言》 [京东](https://item.jd.com/12187988.html)
+* The Way to Go [在线](https://github.com/Unknwon/the-way-to-go_ZH_CN)  
+
 ### 进阶
 * 幕课网 [Go语言实战流媒体视频网站](https://coding.imooc.com/learn/list/227.html)
 * 幕课网 [Go实战仿百度云盘 实现企业级分布式云存储系统](https://coding.imooc.com/learn/list/323.html) 
