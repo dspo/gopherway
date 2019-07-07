@@ -38,6 +38,7 @@
 * http client programing
 * http server programing
 * gRPC
+* socket & web-socket
 * micro-services for applications
 * distributed
 * testing
