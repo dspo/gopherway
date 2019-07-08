@@ -1,4 +1,4 @@
-# Go语言Cookbook简明教程
+# Go语言简明Cookbook
 
 ## 目录
 * [string & bytes](bytestrings)
