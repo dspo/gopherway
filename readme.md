@@ -52,6 +52,7 @@ channel, goroutine, context, reflex等Go语言核心特性；http客户端与服
 * Go开发工程师招聘启示提及最多的Web及微服务开发框架 [gin-gonic/gin](https://github.com/gin-gonic/gin)
 * 一站式Web开发框架 [astaxie/beego](github.com/astaxie/beego) <- Go语言中的Django  
 * Go语言UI库及桌面程序开发框架 [sciter-sdk/go-sciter](https://github.com/sciter-sdk/go-sciter)
+* 流行的第三方websocket库[gorilla/websocket](https://github.com/gorilla/websocket) <- 评价比golang.org/x/net/websocket要好
 
 ## Who is heavily using Go ?
 百度BFE 七牛云 知乎 bilibili 360 今日头条 饿了么 滴滴  
