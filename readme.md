@@ -53,6 +53,6 @@ channel, goroutine, context, reflex等Go语言核心特性；http客户端与服
 * 一站式Web开发框架 [astaxie/beego](github.com/astaxie/beego) <- Go语言中的Django  
 * Go语言UI库及桌面程序开发框架 [sciter-sdk/go-sciter](https://github.com/sciter-sdk/go-sciter)
 
-## Who Use Go A Ton in China
+## Who is heavily using Go ?
 百度BFE 七牛云 知乎 bilibili 360 今日头条 饿了么 滴滴  
 积梦 阿里巴巴 网易  
