@@ -47,6 +47,9 @@
 * data streams
 * reflex
 
+* [基本生产者消费者模型](production_and_consumer/production_and_consumer.go)  
+示例了一个利用channel构造的基本的生产者消费者模型。
+
 ## the very important interfaces in Go: io.Reader & io.Writer
 > ### 最重要的I/O接口
 
