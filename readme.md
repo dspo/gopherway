@@ -55,5 +55,14 @@ channel, goroutine, context, reflex等Go语言核心特性；http客户端与服
 * 流行的第三方**websocket库**[gorilla/websocket](https://github.com/gorilla/websocket) <- 评价比golang.org/x/net/websocket要好
 
 ## Who is heavily using Go ?
-百度BFE 七牛云 知乎 bilibili 360 今日头条 饿了么 滴滴  
-积梦 阿里巴巴 网易  
+[百度](https://talent.baidu.com/external/baidu/index.html) 
+[七牛云](https://career.qiniu.com/) 
+[知乎](https://app.mokahr.com/apply/zhihu/3819) 
+[bilibili](https://www.bilibili.com/blackboard/join.html) 
+[360](http://hr.360.cn/) 
+[今日头条(字节跳动)](https://job.bytedance.com) 
+饿了么 
+滴滴  
+积梦 
+阿里巴巴 
+网易  

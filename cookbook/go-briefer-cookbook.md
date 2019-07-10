@@ -22,10 +22,11 @@
     - io.Closer
 * file & file system
     - directories & files
-    - working with CSV
+    - [操作CSV文件](filesystem/csv.go)
     - working with JSON
     - working with temporary files
     - working with text template & HTML templates
+    - [使用临时文件](./go-briefer-cookbook.md#使用临时文件)
 * context in Go
 * concurrency in Go
 * databases & storage
@@ -47,10 +48,26 @@
 * data streams
 * reflex
 
-* [基本生产者消费者模型](production_and_consumer/production_and_consumer.go)  
-示例了一个利用channel构造的基本的生产者消费者模型。
+* 模式
+    - [基本生产者消费者模型](production_and_consumer/production_and_consumer.go)  
+    示例了一个利用channel构造的基本的生产者消费者模型。
 
-## the very important interfaces in Go: io.Reader & io.Writer
-> ### 最重要的I/O接口
-
+## I/O操作核心接口: io.Reader & io.Writer
 ![](../img/io.Reader++io.Writer+interfaces.svg)
+
+## 使用临时文件
+以下是IO操作中使用临时文件的例子
+```go
+func someFunc() {
+	t, err := ioutil.TempDir("", "tmp")
+	if err != nil {
+		return
+	}
+	defer os.RemoveAll(t)
+	tf, err := ioutil.TempFile(t, "tmp")
+	if err != nil {
+		return
+	}
+	fmt.Println(tf.Name())
+}
+```
