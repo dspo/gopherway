@@ -4,7 +4,6 @@
 * [string & bytes](bytestrings)
     - [bytes.Buffer](bytestrings/buffer.go) -> 处理流数据时，用bytes.Buffer而不要用[]bytes 
     - [ioutil.ReadAll](bytestrings/buffer.go) -> 读取io.Reader内容的一个快捷方式
-    - conversion
     - regex
     - format
 * date and time
@@ -23,8 +22,7 @@
 * file & file system
     - directories & files
     - [操作CSV文件](filesystem/csv.go)
-    - working with JSON
-    - working with temporary files
+    - [操作JSON](filesystem/json.go)
     - working with text template & HTML templates
     - [使用临时文件](./go-briefer-cookbook.md#使用临时文件)
 * context in Go
