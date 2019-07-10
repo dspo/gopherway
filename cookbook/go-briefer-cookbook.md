@@ -2,8 +2,8 @@
 
 ## 目录
 * [string & bytes](bytestrings)
-    - [bytes.Buffer](bytestrings/buffer.go) -> 处理流数据时，用bytes.Buffer而不要用[]bytes 
-    - [ioutil.ReadAll](bytestrings/buffer.go) -> 读取io.Reader内容的一个快捷方式
+    - [x] [bytes.Buffer](bytestrings/buffer.go) -> 处理流数据时，用bytes.Buffer而不要用[]bytes 
+    - [x] [ioutil.ReadAll](bytestrings/buffer.go) -> 读取io.Reader内容的一个快捷方式
     - regex
     - format
 * date and time
@@ -21,10 +21,10 @@
     - io.Closer
 * file & file system
     - directories & files
-    - [操作CSV文件](filesystem/csv.go)
-    - [操作JSON](filesystem/json.go)
+    - [x] [操作CSV文件](filesystem/csv.go)
+    - [x] [解析JSON文本](filesystem/json.go)
     - working with text template & HTML templates
-    - [使用临时文件](./go-briefer-cookbook.md#使用临时文件)
+    - [x] [使用临时文件](./go-briefer-cookbook.md#使用临时文件)
 * context in Go
 * concurrency in Go
 * databases & storage
@@ -47,7 +47,7 @@
 * reflex
 
 * 模式
-    - [基本生产者消费者模型](production_and_consumer/production_and_consumer.go)  
+    - [x] [基本生产者消费者模型](production_and_consumer/production_and_consumer.go)  
     示例了一个利用channel构造的基本的生产者消费者模型。
 
 ## I/O操作核心接口: io.Reader & io.Writer

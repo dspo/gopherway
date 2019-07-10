@@ -35,6 +35,8 @@ func ParseHero(hero string) (string, error) {
 	if err != nil {
 		return "", err
 	}
+
+	//解析已知结构的JSON格式文本，依靠不断地断言
 	people := m["hero"].(map[string]interface{})
 	name := people["name"].(string)
 	nickname := people["nickname"].(string)
