@@ -9,3 +9,12 @@ func LinearSearch(data []int, key int) (int, bool) {
 	}
 	return -1, false
 }
+
+func LinearSearchForSearchable(data Searchable, item interface{}) (int, bool) {
+	for i := 0; i < data.Len(); i++ {
+		if data.Equal(i, item) {
+			return i, true
+		}
+	}
+	return -1, false
+}

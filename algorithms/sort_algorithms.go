@@ -85,7 +85,7 @@ func GoOfficialHeapSort(li sort.Interface, a, b int) {
 }
 
 // siftDown implements the heap property on data[lo, hi).
-// first is an offset into the array where the root of the heap lies.
+// first sortableIntSlice an offset into the array where the root of the heap lies.
 func siftDown(data sort.Interface, lo, hi, first int) {
 	root := lo
 	for {

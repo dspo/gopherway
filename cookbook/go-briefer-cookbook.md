@@ -40,11 +40,14 @@
 * socket & web-socket
 * micro-services for applications
 * distributed
-* testing
-    * testing
-    * benchmark
-* data streams
-* reflex
+* 测试  
+    参见[algorithms中的测试文件](../algorithms)，可以了解到testing的使用。  
+    - [x] testing  
+    用testing.M管理测试中的依赖顺序，用testing.T进行单元测试。  
+    - [x] benchmark  
+    用testing.B进行性能测试，但要注意被测函数的时间开销应该是收敛的，否则无法进行性能测试。  
+* data streams  
+* reflex  
 
 * 模式
     - [x] [基本生产者消费者模型](production_and_consumer/production_and_consumer.go)  
