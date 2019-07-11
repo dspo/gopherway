@@ -1,5 +1,9 @@
 package data_structures
 
+
+//TODO: 常用结构的实现要重做一遍
+
+
 type Node struct {
 	data interface{}
 	next *Node

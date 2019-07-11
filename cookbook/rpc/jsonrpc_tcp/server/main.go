@@ -14,6 +14,7 @@ func (p *HelloService) Hello(request string, reply *string) error {
 	return nil
 }
 
+//基于TCP协议的JsonRPC服务
 //运行，开启TCP服务
 //一下是在Python中连接TCP服务，进行远程调用的示例
 //>>> import socket
