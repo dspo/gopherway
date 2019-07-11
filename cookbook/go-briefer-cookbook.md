@@ -37,8 +37,8 @@
 * http client programing
 * http server programing
 * RPC & gRPC
-    - 基于TCP的[RPC服务](rpc/jsonrpc_tcp/server)与[端客户端](rpc/jsonrpc_tcp/server)  
-    - 基于HTTP的[RPC服务](rpc/jsonrpc_http/server)与[端客户端](rpc/jsonrpc_http/server)  
+    - 基于TCP的[RPC服务端](rpc/jsonrpc_tcp/server)与[端客户端](rpc/jsonrpc_tcp/server)  
+    - 基于HTTP的[RPC服务端](rpc/jsonrpc_http/server)与[端客户端](rpc/jsonrpc_http/server)  
 * socket & web-socket
 * micro-services for applications
 * distributed
