@@ -1,5 +1,10 @@
 package algorithms
 
+import (
+	"math/rand"
+	"sort"
+)
+
 var (
 	is   IntSlice
 	item int

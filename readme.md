@@ -46,13 +46,17 @@ channel, goroutine, context, reflex等Go语言核心特性；http客户端与服
 * [如何掌握所有的程序语言](http://www.yinwang.org/blog-cn/2017/07/06/master-pl) 王垠   
 * [对于递归有没有什么好的理解方法？](https://www.zhihu.com/question/31412436/answer/683820765) - 帅地的回答 - 知乎  
 
-## Third Libs & Frameworks
+## Third Libs & Frameworks & Awesome Project
 * 最流行第三方**HTTP库** [julienschmidt/httprouter](https://github.com/julienschmidt/httprouter)
 * bilibili 开源**微服务框架** [bilibili/Kratos](https://github.com/bilibili/kratos)
 * Go开发工程师招聘启示提及最多的**Web及微服务开发框架** [gin-gonic/gin](https://github.com/gin-gonic/gin)
 * 一站式**Web开发框架** [astaxie/beego](github.com/astaxie/beego) <- Go语言中的Django  
 * Go语言**UI库及桌面程序开发框架** [sciter-sdk/go-sciter](https://github.com/sciter-sdk/go-sciter)
 * 流行的第三方**websocket库**[gorilla/websocket](https://github.com/gorilla/websocket) <- 评价比golang.org/x/net/websocket要好
+* 分布式Redis解决方案Codis
+* 高可用的分布式键值数据库Etcd
+* 全新的基于容器技术的分布式架构领先方案Kubernetes
+* 支持HTTP/2 原生HTTPS的Web服务器Caddy
 
 ## Who is heavily using Go ?
 [百度](https://talent.baidu.com/external/baidu/index.html) 
