@@ -15,7 +15,7 @@
 * [接口](https://www.runoob.com/go/go-interfaces.html)
 * [错误处理](https://www.runoob.com/go/go-error-handling.html)
 
-## [Briefer Tutorial to Data Structures & Algorithms in Go](data_structures/go-D&A-briefer-tutorial.md)
+## [Briefer Tutorial of Data Structures & Algorithms in Go](data_structures/go-D&A-briefer-tutorial.md)
 ![](https://img.shields.io/badge/download-89-brightgreen.svg)  
 [PDF eBook - en](data_structures/go-data-structures-and-algorithms.pdf)   <- 如无英文阅读障碍，可直接阅读电子书; 如文件过大不能在线阅读可打开页面后下载到本地阅读   
 简明介绍常见数据结构与常用算法的Go语言实现。
