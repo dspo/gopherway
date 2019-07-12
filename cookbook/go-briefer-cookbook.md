@@ -17,7 +17,7 @@
     - standard lib: strconv
     - number
 * core I/O interfaces
-    - [io.Reader & io.Writer](./go-briefer-cookbook.md#the-very-important-interfaces-in-go-ioreader--iowriter)
+    - [io.Reader & io.Writer](./go-briefer-cookbook.md#io操作核心接口-ioreader--iowriter)
     - io.Closer
 * file & file system
     - directories & files
