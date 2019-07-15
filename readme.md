@@ -56,7 +56,9 @@ channel, goroutine, context, reflex等Go语言核心特性；http客户端与服
 * 分布式Redis解决方案Codis
 * 高可用的分布式键值数据库Etcd
 * 全新的基于容器技术的分布式架构领先方案Kubernetes
-* 支持HTTP/2 原生HTTPS的Web服务器Caddy
+* 支持HTTP/2 原生HTTPS的Web服务器Caddy  
+* 微服务开发框架 [go-micro](https://github.com/micro/go-micro)
+
 
 ## Who is heavily using Go ?
 [百度](https://talent.baidu.com/external/baidu/index.html) 
