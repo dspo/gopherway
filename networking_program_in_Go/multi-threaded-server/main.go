@@ -52,7 +52,7 @@ func main()  {
 func handleClient(conn *net.TCPConn)  {
 	defer conn.Close()
 	var buf [512]byte
-	conn.Write([]byte("\nyour client connect successful"))
+	_, _ = conn.Write([]byte("\nyour client connect successful"))
 
 	cnt := 0
 	for {
@@ -70,7 +70,7 @@ func handleClient(conn *net.TCPConn)  {
 		}
 
 		daytime := time.Now().String()
-		conn.Write([]byte(daytime))
+		_, _ = conn.Write([]byte(daytime))
 	}
 }
 
