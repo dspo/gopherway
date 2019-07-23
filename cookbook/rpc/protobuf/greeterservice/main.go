@@ -10,7 +10,23 @@ import (
 	"os"
 )
 
-func runClient(service micro.Service)  {
+//create a new service.
+//optionally include some options here
+var service = micro.NewService(
+	micro.Name("greeter"),
+	micro.Version("latest"),
+	micro.Metadata(map[string]string{"type": "helloworld",}),
+
+	//setup some flags.
+	//specify --run_client to run the client
+	//add runtime flags
+	micro.Flags(cli.BoolFlag{
+		Name:"run_client",
+		Usage:"launch the client",
+	}),
+	)
+
+func GreeterClient(service micro.Service)  {
 	greeter := proto.NewGreeterService("greeter", service.Client())
 	rsp, err := greeter.Hello(context.TODO(), &proto.HelloRequest{Name:"tony stack"})
 	if err != nil {
@@ -21,29 +37,13 @@ func runClient(service micro.Service)  {
 }
 
 func main() {
-	//create a new service.
-	//optionally include some options here
-	service := micro.NewService(
-		micro.Name("greeter"),
-		micro.Version("latest"),
-		micro.Metadata(map[string]string{"type": "helloworld",}),
-
-		//setup some flags.
-		//specify --run_client to run the client
-		//add runtime flags
-		micro.Flags(cli.BoolFlag{
-			Name:"run_client",
-			Usage:"launch the client",
-		}),
-	)
-
 	service.Init(
 		//init will parse the command line flags.
 		// any flags set will override above settings.
 		// options defined here will override anything set on the command line.
 		micro.Action(func(context *cli.Context) {
 			if context.Bool("run_client"){
-				runClient(service)
+				GreeterClient(service)
 				os.Exit(0)
 			}
 
