@@ -50,17 +50,18 @@ see more in [how to run the consul agent](https://learn.hashicorp.com/consul/get
 
 ## Step-3 Writing a Go Service
 > [see source here: writing a go service](https://micro.mu/docs/writing-a-go-service.html)  
-0. create service proto
-    0. make a proto3 script, define service
+
+1. create service proto
+    1. make a proto3 script, define service
     0. generate the proto
 0. write the service
-    0. implements the interface defined for the handler
+    1. implements the interface defined for the handler
     0. initialises a micro.Service
     0. register the handler
     0. runs the service
 ## Step-4 Defining a client  
 > [see details here](https://micro.mu/docs/go-micro.html#define-a-client)
-0. creates a new micro.Service and initialises it
+1. creates a new micro.Service and initialises it
 0. creates a new client uses NewXxxxService (implemented in xxx.micro.go)         
 0. calls remote service
 0. runs the client
