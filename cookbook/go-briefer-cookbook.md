@@ -40,8 +40,8 @@
     - 基于TCP的[RPC服务端](rpc/jsonrpc_tcp/server)与[端客户端](rpc/jsonrpc_tcp/server)  
     - 基于HTTP的[RPC服务端](rpc/jsonrpc_http/server)与[端客户端](rpc/jsonrpc_http/server)  
 * socket & web-socket
-* micro-services for applications  
-    - go-micro https://github.com/micro/go-micro
+* [micro-services for applications](rpc/protobuf)
+    - [基于go-micro编写一个微服务](rpc/protobuf/readme.md)  
 * distributed
 * 测试  
     参见[algorithms中的测试文件](../algorithms)，可以了解到testing的使用。  
