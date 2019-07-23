@@ -59,7 +59,7 @@ channel, goroutine, context, reflex等Go语言核心特性；http客户端与服
 * 支持HTTP/2、原生支持HTTPS的**Web服务器**[caddyserver/caddy](https://github.com/caddyserver/caddy)  
 * **微服务**开发框架 [micro/go-micro](https://github.com/micro/go-micro)
 * 系统与时间序列数据库监控管理工具 [prometheus/prometheus](https://github.com/prometheus/prometheus)
-
+* 分布式高可用数据中心[hashicorp/consul](https://github.com/hashicorp/consul)
 
 ## Who is heavily using Go ?
 [百度](https://talent.baidu.com/external/baidu/index.html) 
