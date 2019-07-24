@@ -20,18 +20,18 @@ func (p *HelloService) Hello(request string, reply *string) error {
 //>>> import socket
 //>>> s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 //>>> s.connect(('localhost', 1234))
-//>>> s.send('{"method":"HelloService.Hello","params":["hello"],"id":1}'.encode())
+//>>> s.send('{"method":"HelloService.Hello","params":["hello"],"id":01}'.encode())
 //57
 //>>> str(s.recv(1024), encoding='utf8')
-//'{"id":1,"result":"hello:hello","error":null}\n'
+//'{"id":01,"result":"hello:hello","error":null}\n'
 //>>>
 //>>>
 //>>>
 //>>>
-//>>> s.send('{"method":"HelloService.Hello","params":["tony stack"],"id":1}'.encode())
+//>>> s.send('{"method":"HelloService.Hello","params":["tony stack"],"id":01}'.encode())
 //62
 //>>> str(s.recv(1024), encoding='utf8')
-//'{"id":1,"result":"hello:tony stack","error":null}\n'
+//'{"id":01,"result":"hello:tony stack","error":null}\n'
 func main() {
 	rpc.RegisterName("HelloService", new(HelloService))
 
