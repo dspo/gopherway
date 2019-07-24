@@ -53,7 +53,7 @@
 * reflex  
 
 * 模式
-    - [x] [基本生产者消费者模型](production_and_consumer/production_and_consumer.go)  
+    - [x] [基本生产者消费者模型](design_patterns/production_and_consumer/production_and_consumer.go)  
     示例了一个利用channel构造的基本的生产者消费者模型。
 
 ## I/O操作核心接口: io.Reader & io.Writer

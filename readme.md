@@ -23,14 +23,22 @@
 ## [Cookbook](cookbook/go-briefer-cookbook.md)
 涉及重要接口使用；正则表达式、常用字符串处理技巧；时间日期处理；文件操作与文件系统；
 channel, goroutine, context, reflex等Go语言核心特性；http客户端与服务端编程；gRPC；
-微服务；分布式；测试；数据流操作等。
+微服务；分布式；测试；数据流操作等。  
+### 主题提要
+* [bytes and string](cookbook/bytestrings/readme.md)
+* [cgo](cookbook/cgo/readme.md)
+* [date and time](cookbook/date_and_time/readme.md)
+* [file system](cookbook/filesystem/readme.md)
+* [important interfaces](cookbook/interfaces/readme.md)
+* [design patterns](cookbook/design_patterns/readme.md)
+* [rpc, micro service, go-mocro](cookbook/rpc/readme.md)
 
 ## Practice（nothing yet）
 
 ## Learning source & Action
 ### 入门
 * 《Go程序设计语言》 [京东](https://item.jd.com/12187988.html)
-* The Way to Go [在线](https://github.com/Unknwon/the-way-to-go_ZH_CN)  
+* The Way to Go [在线](https://github.com/Unknwon/the-way-to-go_ZH_CN)   
 
 ### 进阶
 * 幕课网 [Go语言实战流媒体视频网站](https://coding.imooc.com/learn/list/227.html)
