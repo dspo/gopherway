@@ -31,4 +31,3 @@ func BenchmarkBinarySearchForSearchable(b *testing.B) {
 		BinarySearchForSearchable(is, item)
 	}
 }
-

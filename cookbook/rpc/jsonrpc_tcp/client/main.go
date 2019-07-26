@@ -1,11 +1,11 @@
 package main
 
 import (
-	"net"
+	"fmt"
 	"log"
+	"net"
 	"net/rpc"
 	"net/rpc/jsonrpc"
-	"fmt"
 )
 
 //基于TCP协议的JSONRPC客户端程序
@@ -26,5 +26,3 @@ func main() {
 
 	fmt.Println(reply)
 }
-
-

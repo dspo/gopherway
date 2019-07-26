@@ -13,9 +13,7 @@ func main() {
 	)
 	service.Init()
 
-	//注册example接口
-	proto.RegisterExampleHandler(service.Server(), new(handler.Exampel))
-	//注册foo接口
+	proto.RegisterExampleHandler(service.Server(), new(handler.Example))
 	proto.RegisterFooHandler(service.Server(), new(handler.Foo))
 
 	if err := service.Run(); err != nil {

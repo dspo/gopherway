@@ -3,11 +3,10 @@ package main
 
 /*
 #include <stdio.h>
- */
+*/
 
 import "C"
 
 func main() {
 	C.puts(C.CString("hello cgo")) //没有在程序退出前释放C.CString创建的C语言字符串,会导致内存泄漏
 }
-

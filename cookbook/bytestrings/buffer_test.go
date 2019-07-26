@@ -1,12 +1,11 @@
 package bytestrings
 
 import (
-	"testing"
+	"bufio"
 	"bytes"
 	"fmt"
-	"bufio"
+	"testing"
 )
-
 
 func TestToString(t *testing.T) {
 	rawString := "this is a test stirng"
@@ -29,16 +28,16 @@ func TestToString(t *testing.T) {
 func TestBuffer(t *testing.T) {
 	rawString := "it's easy to encode unicode into a byte array"
 	b := Buffer(rawString) //将原始string转换为*bytes.Buffer
-	s, err := ToString(b) //*bytes.Buffer转换为string
+	s, err := ToString(b)  //*bytes.Buffer转换为string
 	if err != nil {
 		t.Error(err)
 	}
-	fmt.Println(b.String())  //调用*bytes.Buffer.String()方法将得到*bytes.Buffer的string
+	fmt.Println(b.String()) //调用*bytes.Buffer.String()方法将得到*bytes.Buffer的string
 	fmt.Println(s)
 
-	reader := bytes.NewReader([]byte(rawString))  //得到一个bytes.Reader，它实现了io.Reader接口
+	reader := bytes.NewReader([]byte(rawString)) //得到一个bytes.Reader，它实现了io.Reader接口
 	scanner := bufio.NewScanner(reader)
-	for scanner.Scan(){
+	for scanner.Scan() {
 		fmt.Print(scanner.Text())
 	}
 }

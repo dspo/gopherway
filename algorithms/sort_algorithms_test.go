@@ -1,16 +1,16 @@
 package algorithms
 
 import (
-	"testing"
 	"sort"
+	"testing"
 )
 
 var (
-	li = intLi{3, 0, 9, 8, 6, 7, 3, 8, 6, -1, 0, 6}
+	li       = intLi{3, 0, 9, 8, 6, 7, 3, 8, 6, -1, 0, 6}
 	sortedLi = make(intLi, li.Len())
 )
 
-func init()  {
+func init() {
 	copy(sortedLi, li)
 	sort.Sort(sortedLi)
 }
@@ -24,14 +24,18 @@ func (li intLi) Len() int {
 func (li intLi) Less(i, j int) bool {
 	return li[i] < li[j]
 }
-func (li intLi) Swap(i, j int)  {
+func (li intLi) Swap(i, j int) {
 	li[i], li[j] = li[j], li[i]
 }
 
 func (li intLi) Equal(other intLi) bool {
-	if li.Len() != other.Len() { return false}
-	for i := 0; i < li.Len(); i++{
-		if li[i] != other[i] { return false}
+	if li.Len() != other.Len() {
+		return false
+	}
+	for i := 0; i < li.Len(); i++ {
+		if li[i] != other[i] {
+			return false
+		}
 	}
 	return true
 }
@@ -41,7 +45,7 @@ func TestBubbleSort(t *testing.T) {
 	BubbleSort(forSorting)
 	t.Log(forSorting)
 	t.Log(sortedLi)
-	if !forSorting.Equal(sortedLi){
+	if !forSorting.Equal(sortedLi) {
 		t.Error("srot failed !")
 	}
 }
@@ -61,18 +65,17 @@ func TestSelectionSort(t *testing.T) {
 	SelectionSort(forSorting)
 	t.Log(forSorting)
 	t.Log(sortedLi)
-	if !forSorting.Equal(sortedLi){
+	if !forSorting.Equal(sortedLi) {
 		t.Error("sort failed !")
 	}
 }
-
 
 func TestInsertionSort(t *testing.T) {
 	forSorting := li
 	InsertionSort(forSorting)
 	t.Log(forSorting)
 	t.Log(sortedLi)
-	if !forSorting.Equal(sortedLi){
+	if !forSorting.Equal(sortedLi) {
 		t.Error("sort faild !")
 	}
 }
@@ -100,7 +103,7 @@ func BenchmarkSelectionSort(b *testing.B) {
 
 func BenchmarkInsertionSort(b *testing.B) {
 	forSorting := li
-	for i := 0; i < b.N; i++{
+	for i := 0; i < b.N; i++ {
 		InsertionSort(forSorting)
 	}
 }

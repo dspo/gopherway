@@ -1,11 +1,10 @@
 package algorithms
 
-
 //二分查找要求列表是有序的
 //这个二分搜索函数仅适用于[]int
 func BinarySearchForIntSlice(sortedArray []int, item int) (int, bool) {
-	init, end := 0, len(sortedArray) - 1
-	for init <= end{
+	init, end := 0, len(sortedArray)-1
+	for init <= end {
 		middle := (end + init) >> 1
 		if sortedArray[middle] == item {
 			return middle, true
@@ -22,7 +21,7 @@ func BinarySearchForIntSlice(sortedArray []int, item int) (int, bool) {
 //这个二分搜索函数适用于实现了Searchable接口的类型
 //见binary_search_test.go
 func BinarySearchForSearchable(sorted Searchable, item interface{}) (int, bool) {
-	init, end := 0, sorted.Len() - 1
+	init, end := 0, sorted.Len()-1
 	for init <= end {
 		middle := (end + init) >> 1
 		if sorted.Equal(middle, item) {

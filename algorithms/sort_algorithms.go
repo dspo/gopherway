@@ -10,8 +10,8 @@ import (
 func BubbleSort(li sort.Interface) {
 	for i := li.Len() - 1; i > 0; i-- {
 		for j := 0; j < i; j++ {
-			if li.Less(j + 1, j) {
-				li.Swap(j, j + 1)
+			if li.Less(j+1, j) {
+				li.Swap(j, j+1)
 			}
 		}
 	}
@@ -25,9 +25,9 @@ func ShortBubbleSort(li sort.Interface) {
 	for passNum > 0 && exchange {
 		exchange = false
 		for i := 0; i < passNum; i++ {
-			if li.Less(i + 1, i) {
+			if li.Less(i+1, i) {
 				exchange = true
-				li.Swap(i, i + 1)
+				li.Swap(i, i+1)
 			}
 		}
 		passNum--
@@ -39,7 +39,7 @@ func ShortBubbleSort(li sort.Interface) {
 func SelectionSort(li sort.Interface) {
 	for i := li.Len() - 1; i > 0; i-- {
 		positionOfMax := 0
-		for j := 1; j < i + 1; j++ {
+		for j := 1; j < i+1; j++ {
 			if li.Less(positionOfMax, j) {
 				positionOfMax = j
 			}
@@ -53,8 +53,8 @@ func SelectionSort(li sort.Interface) {
 //insert new element into the child list at the correct location.
 func InsertionSort(li sort.Interface) {
 	for i := 1; i < li.Len(); i++ {
-		for j := i; j > 0 && li.Less(j, j - 1); j-- {
-			li.Swap(j - 1, j)
+		for j := i; j > 0 && li.Less(j, j-1); j-- {
+			li.Swap(j-1, j)
 		}
 	}
 }

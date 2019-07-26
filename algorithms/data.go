@@ -13,7 +13,7 @@ var (
 //生成一个长度为10000整数数组，
 //向这个数组随机地填充满整数，
 //并对这个数组排序（因为二分搜索只适用于有序列）
-func init()  {
+func init() {
 	length := 10000
 	maxNum := 1000000
 	is = make(IntSlice, length)
@@ -54,5 +54,3 @@ func (is IntSlice) LessThanItem(i int, item interface{}) bool {
 func (is IntSlice) Equal(i int, item interface{}) bool {
 	return is[i] == item.(int)
 }
-
-

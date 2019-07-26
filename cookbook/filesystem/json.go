@@ -2,8 +2,8 @@ package filesystem
 
 import (
 	"encoding/json"
-	"strings"
 	"fmt"
+	"strings"
 )
 
 var (
@@ -41,7 +41,7 @@ func ParseHero(hero string) (string, error) {
 	name := people["name"].(string)
 	nickname := people["nickname"].(string)
 	socialTmp := m["called"].([]interface{})
-	var socialSlice  []string
+	var socialSlice []string
 	for _, s := range socialTmp {
 		socialSlice = append(socialSlice, s.(string))
 	}

@@ -1,9 +1,9 @@
 package interfaces
 
 import (
+	"fmt"
 	"io"
 	"os"
-	"fmt"
 )
 
 //从in复制数据到out；
@@ -17,7 +17,7 @@ func Copy(in io.ReadSeeker, out io.Writer) error {
 	}
 	in.Seek(0, 0)
 	buf := make([]byte, 64)
-	if _, err := io.CopyBuffer(w, in, buf); err != nil{
+	if _, err := io.CopyBuffer(w, in, buf); err != nil {
 		return err
 	}
 	fmt.Println()

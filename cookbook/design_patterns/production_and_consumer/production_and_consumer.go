@@ -6,13 +6,13 @@ import (
 
 func ProductionAndConsumerModel() {
 	productionLines := 5 //生产线的条数
-	consumersCnt := 1 //消费者个数
+	consumersCnt := 1    //消费者个数
 	tasks := []string{"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"}
 	taskChan := make(chan string, len(tasks))
 	productionSigns := make(chan bool, productionLines)
 	consumerSigns := make(chan bool, consumersCnt)
 
-	for i := 0; i < len(tasks); i++{
+	for i := 0; i < len(tasks); i++ {
 		taskChan <- tasks[i]
 	}
 
@@ -29,10 +29,10 @@ func ProductionAndConsumerModel() {
 					productionSigns <- true
 					return
 				}
-				taskElement := <-taskChan  //拿到原材料
-				result := func(ele string) string{return taskElement + taskElement}(taskElement) //某个加工原材料的函数
+				taskElement := <-taskChan                                                           //拿到原材料
+				result := func(ele string) string { return taskElement + taskElement }(taskElement) //某个加工原材料的函数
 				fmt.Println("拿到", taskElement, "生产生了==>", result)
-				resChan <- result  //放到成品库
+				resChan <- result //放到成品库
 			}
 		}()
 	}
@@ -46,7 +46,7 @@ func ProductionAndConsumerModel() {
 				consumerSigns <- true
 				return
 			}
-			result := <- resChan
+			result := <-resChan
 			fmt.Println("消费了：", result)
 		}
 	}()

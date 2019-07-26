@@ -1,12 +1,12 @@
 package main
 
 import (
-	"net"
 	"log"
+	"net"
 	"time"
 )
 
-func main()  {
+func main() {
 	service := ":1201"
 	tcpAddr, err := net.ResolveTCPAddr("tcp4", service)
 
@@ -49,7 +49,7 @@ func main()  {
 //Go 建议使用接口，而不是具体的类型，
 //但是这样做会损失具体类型的方法，如TCPConn.SetKeepAlive, UDPConn.SetReadBuffer等（除非做类型转换）
 //用接口还是用类型取决于你自己的决定
-func handleClient(conn *net.TCPConn)  {
+func handleClient(conn *net.TCPConn) {
 	defer conn.Close()
 	var buf [512]byte
 	_, _ = conn.Write([]byte("\nyour client connect successful"))
@@ -64,7 +64,7 @@ func handleClient(conn *net.TCPConn)  {
 		if err != nil {
 			return
 		}
-		_, err = conn.Write(buf[0: n])
+		_, err = conn.Write(buf[0:n])
 		if err != nil {
 			return
 		}
@@ -73,4 +73,3 @@ func handleClient(conn *net.TCPConn)  {
 		_, _ = conn.Write([]byte(daytime))
 	}
 }
-

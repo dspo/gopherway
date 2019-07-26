@@ -1,8 +1,6 @@
 package data_structures
 
-
 //TODO: 常用结构的实现要重做一遍
-
 
 type Node struct {
 	data interface{}
@@ -18,13 +16,13 @@ type LinkedList struct {
 func NewLoopLinkedList(data ...interface{}) *LinkedList {
 	dataSlice := append([]interface{}{}, data...)
 	nodeSlice := make([]*Node, len(dataSlice))
-	for i := len(dataSlice) - 1; i >= 0; i--{
-		nodeSlice[i] = &Node{data:dataSlice[i]}
-		if i + 1 < len(dataSlice) {
-			nodeSlice[i].next = nodeSlice[i + 1]
+	for i := len(dataSlice) - 1; i >= 0; i-- {
+		nodeSlice[i] = &Node{data: dataSlice[i]}
+		if i+1 < len(dataSlice) {
+			nodeSlice[i].next = nodeSlice[i+1]
 		}
 	}
-	nodeSlice[len(dataSlice) - 1].next = nodeSlice[0]
+	nodeSlice[len(dataSlice)-1].next = nodeSlice[0]
 	cursor := *nodeSlice[0]
 	return &LinkedList{nodeSlice[0], &cursor}
 }
@@ -33,10 +31,10 @@ func NewLoopLinkedList(data ...interface{}) *LinkedList {
 func NewLinkedList(data ...interface{}) *LinkedList {
 	dataSlice := append([]interface{}{}, data...)
 	nodeSlice := make([]*Node, len(dataSlice))
-	for i := len(dataSlice) - 1; i >= 0; i--{
-		nodeSlice[i] = &Node{data:dataSlice[i]}
-		if i + 1 < len(dataSlice) {
-			nodeSlice[i].next = nodeSlice[i + 1]
+	for i := len(dataSlice) - 1; i >= 0; i-- {
+		nodeSlice[i] = &Node{data: dataSlice[i]}
+		if i+1 < len(dataSlice) {
+			nodeSlice[i].next = nodeSlice[i+1]
 		}
 	}
 	return &LinkedList{nodeSlice[0], nodeSlice[0]}

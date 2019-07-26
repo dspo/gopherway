@@ -26,7 +26,7 @@ func Buffer(rawString string) *bytes.Buffer {
 //返回读取到的数据（以string形式）。
 func ToString(r io.Reader) (string, error) {
 	b, err := ioutil.ReadAll(r)
-	if err != nil{
+	if err != nil {
 		return "", err
 	}
 	return string(b), nil

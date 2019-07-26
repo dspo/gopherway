@@ -3,7 +3,7 @@ package algorithms
 //线性查找从头找到尾，不要求列表是有序的
 //仅适用于[]int
 func LinearSearch(data []int, key int) (int, bool) {
-	for index, ele := range data{
+	for index, ele := range data {
 		if ele == key {
 			return index, true
 		}

@@ -1,14 +1,13 @@
 package handler
 
 import (
+	"../proto"
 	"context"
 	"github.com/micro/go-micro/errors"
 	"log"
-	"../proto"
 )
 
 type Exampel struct {
-
 }
 
 //Example.Call方法会由API层转发，路由为/example/call的HTTP请求
@@ -23,11 +22,9 @@ func (e *Exampel) Call(ctx context.Context, req *proto.CallRequest, rsp *proto.C
 }
 
 type Foo struct {
-
 }
 
 func (f *Foo) Bar(ctx context.Context, req *proto.EmptyRequest, rsp *proto.EmptyResponse) error {
 	log.Println("copy the request of Foo.Bar")
 	return nil
 }
-
