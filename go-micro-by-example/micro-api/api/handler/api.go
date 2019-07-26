@@ -4,6 +4,7 @@ import (
 	"../proto"
 	"context"
 	"encoding/json"
+	"fmt"
 	"github.com/micro/go-micro/errors"
 	"log"
 	"strings"
@@ -45,12 +46,13 @@ func (f *Foo) Bar(ctx context.Context, req *proto.Request, rsp *proto.Resposne) 
 		return errors.BadRequest("go.micro.api.example", "require post")
 	}
 	ct, ok := req.Header["Content-Type"]
+	fmt.Println(ct)
 	if !ok || len(ct.Values) == 0 {
 		return errors.BadRequest("go.micro.api.example", "need content-type")
 	}
-	log.Println(ct.Values[0])
-	if ct.Values[0] != "application/json" {
-		return errors.BadRequest("go.micro.api.example", "except application/json")
+	contentType := ct.Values[0]
+	if contentType != "application/json" {
+		return errors.BadRequest("go.micro.api.example", "except application/json but " + contentType)
 	}
 
 	log.Println("set body")
@@ -60,6 +62,5 @@ func (f *Foo) Bar(ctx context.Context, req *proto.Request, rsp *proto.Resposne) 
 
 	//设置返回值
 	rsp.Body = "收到消息：" + string([]byte(req.Body))
-	rsp.Body = req.Body
 	return nil
 }
