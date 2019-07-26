@@ -1,4 +1,4 @@
-# 一个简单的go-micro示例
+# 涓�涓畝鍗曠殑go-micro绀轰緥
 
 ## Step-1 install consul
 0. [download consul binary file](https://www.consul.io/downloads.html) <-- click here;  
