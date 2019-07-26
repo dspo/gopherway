@@ -7,7 +7,7 @@
 >
 >在Micro体系中，服务都会有自己的命名空间，而API的默认命名空间是`go.micro.api`。通常，部署在其后提供具体接口的微服务，我们会默认按照 Micro风格将它们的命名空间设置为`go.micro.api.example`的样式，example便是具体的服务名，如果需要改动这个值，在启动时指定` --namespace=`指定名称指令即可。
 
-### hadnler 处理器
+### handler 处理器
 Micro API目前有5种处理方式，可以根据需求将API设置成指定的类型。
 1.	**RPC**  
     默认选项，通过RPC向go-micro应用转送请求，通常只传送请求body，头信息不封装。只接收POST请求。

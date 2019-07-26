@@ -65,3 +65,9 @@ see more in [how to run the consul agent](https://learn.hashicorp.com/consul/get
 0. creates a new client uses NewXxxxService (implemented in xxx.micro.go)         
 0. calls remote service
 0. runs the client
+
+### 链接
+[目录](/go-micro-by-example)  
+上一节  
+[下一节](/go-micro-by-example/micro-api)  
+

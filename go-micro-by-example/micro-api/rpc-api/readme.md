@@ -31,4 +31,6 @@ go run rpc.go
 [test.py](test.py)  
 
 ### 链接
-[目录](../..)
+[目录](/go-micro-by-example)  
+[上一节](/go-micro-by-example/micro-api)  
+下一节
