@@ -71,6 +71,6 @@ http路径    |    后台服务    |    接口方法
 
 
 ### 链接
-* [目录](../)
-* [上一节：一个简单的go-micro示例](../greeterservice)
-* [下一节：rcp api示例](../micro-api/rpc-api)
+* [目录](/go-micro-by-example)
+* [上一节：一个简单的go-micro示例](/go-micro-by-example/greeterservice)
+* [下一节：rcp api示例](/go-micro-by-example/micro-api/rpc-api)
