@@ -20,20 +20,23 @@
 [PDF eBook - en](data_structures/go-data-structures-and-algorithms.pdf)   <- 如无英文阅读障碍，可直接阅读电子书; 如文件过大不能在线阅读可打开页面后下载到本地阅读   
 简明介绍常见数据结构与常用算法的Go语言实现。
 
-## [Cookbook](cookbook/go-briefer-cookbook.md)
+## [Cookbook and Practice](cookbook/readme.md)
 涉及重要接口使用；正则表达式、常用字符串处理技巧；时间日期处理；文件操作与文件系统；
 channel, goroutine, context, reflex等Go语言核心特性；http客户端与服务端编程；gRPC；
 微服务；分布式；测试；数据流操作等。  
 ### 主题提要
-* [bytes and string](cookbook/bytestrings/readme.md)
-* [cgo](cookbook/cgo/readme.md)
-* [date and time](cookbook/date_and_time/readme.md)
-* [file system](cookbook/filesystem/readme.md)
-* [important interfaces](cookbook/interfaces/readme.md)
-* [design patterns](cookbook/design_patterns/readme.md)
-* [rpc, micro service, go-mocro](cookbook/rpc/readme.md)
+#### 初阶主题
+* [bytes and string](cookbook/bytestrings)
+* [date and time](cookbook/date_and_time)
+* [file system](cookbook/filesystem)
+* [important interfaces](cookbook/interfaces)
+#### 中阶主题
+* [design patterns](cookbook/design_patterns)
+* [cgo](cookbook/cgo)
+* [rpc](cookbook/rpc)
 
-## Practice（nothing yet）
+#### 实践主题
+* [go-micro by example](go-micro-by-example)
 
 ## Learning source & Action
 ### 入门
@@ -66,6 +69,7 @@ channel, goroutine, context, reflex等Go语言核心特性；http客户端与服
 * 全新的基于容器技术的**分布式架构领先方案**[kubernetes/kubernetes（k8s）](https://github.com/kubernetes/kubernetes)
 * 支持HTTP/2、原生支持HTTPS的**Web服务器**[caddyserver/caddy](https://github.com/caddyserver/caddy)  
 * **微服务**开发框架 [micro/go-micro](https://github.com/micro/go-micro)
+    - [go-micro 最佳实践](https://github.com/micro-in-cn/all-in-one)
 * 系统与时间序列数据库监控管理工具 [prometheus/prometheus](https://github.com/prometheus/prometheus)
 * 分布式高可用数据中心[hashicorp/consul](https://github.com/hashicorp/consul)
 

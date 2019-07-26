@@ -1,4 +1,4 @@
-# go-micro introduce
+# 一个简单的go-micro示例
 
 ## Step-1 install consul
 0. [download consul binary file](https://www.consul.io/downloads.html) <-- click here;  

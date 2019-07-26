@@ -17,14 +17,14 @@
     - standard lib: strconv
     - number
 * core I/O interfaces
-    - [io.Reader & io.Writer](./go-briefer-cookbook.md#io操作核心接口-ioreader--iowriter)
+    - [io.Reader & io.Writer](readme.md#io操作核心接口-ioreader--iowriter)
     - io.Closer
 * file & file system
     - directories & files
     - [x] [操作CSV文件](filesystem/csv.go)
     - [x] [解析JSON文本](filesystem/json.go)
     - working with text template & HTML templates
-    - [x] [使用临时文件](./go-briefer-cookbook.md#使用临时文件)
+    - [x] [使用临时文件](readme.md#使用临时文件)
 * context in Go
 * concurrency in Go
 * databases & storage
@@ -41,7 +41,7 @@
     - 基于HTTP的[RPC服务端](rpc/jsonrpc_http/server)与[端客户端](rpc/jsonrpc_http/server)  
 * socket & web-socket
 * [micro-services for applications](rpc/protobuf)
-    - [基于go-micro编写一个微服务](rpc/protobuf/readme.md)  
+    - [基于go-micro编写一个微服务](../go-micro-by-example/greeterservice/readme.md)  
 * distributed
 * 测试  
     参见[algorithms中的测试文件](../algorithms)，可以了解到testing的使用。  
