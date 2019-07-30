@@ -5,6 +5,7 @@ import (
 	proto "github.com/micro/go-api/proto"
 	"github.com/micro/go-log"
 	"github.com/micro/go-micro"
+	"log"
 )
 
 //切记：事件订阅结构的所有公有方法都会被执行

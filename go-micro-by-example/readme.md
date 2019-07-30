@@ -1,17 +1,18 @@
 # go-micro by example
-°æÈ¨ËµÃ÷£º±¾Ä¿Â¼ÏÂÄÚÈİ½ÔÎªgo-microÏà¹ØÑ§Ï°±Ê¼Ç£¬ÄÚÈİÖ÷ÒªÀ´Ô´ÓÚgo-micro¹ÙÍø¡¢
-Ïà¹ØÊé¼®¡¢²©¿Í¡¢¿ªÔ´ÏîÄ¿ºÍÎÄÕÂ£¨Ö÷ÒªÀ´Ô´ÓÚgo-micro¹ÙÍøºÍ
-[micro-in-cn/all-in-one](https://github.com/micro-in-cn/all-in-one) ÏîÄ¿£©£¬
-±ÊÕß½öÒÔ±Ê¼ÇĞÎÊ½ÖØĞÂ×éÖ¯£¬
-Ïà¹ØÈ¨Àû¹éÔ­ÏîÄ¿×÷ÕßËùÓĞ£»
-ÔÚ¾ßÌå±Ê¼ÇÒ³ÖĞ¿ÉÄÜ²»¶Ô±Ê¼ÇÀ´Ô´ÔÙĞĞËµÃ÷¡£
+ç‰ˆæƒè¯´æ˜ï¼šæœ¬ç›®å½•ä¸‹å†…å®¹çš†ä¸ºgo-microç›¸å…³å­¦ä¹ ç¬”è®°ï¼Œå†…å®¹ä¸»è¦æ¥æºäºgo-microå®˜ç½‘ã€
+ç›¸å…³ä¹¦ç±ã€åšå®¢ã€å¼€æºé¡¹ç›®å’Œæ–‡ç« ï¼ˆä¸»è¦æ¥æºäºgo-microå®˜ç½‘å’Œ
+[micro-in-cn/all-in-one](https://github.com/micro-in-cn/all-in-one) é¡¹ç›®ï¼‰ï¼Œ
+ç¬”è€…ä»…ä»¥ç¬”è®°å½¢å¼é‡æ–°ç»„ç»‡ï¼Œ
+ç›¸å…³æƒåˆ©å½’åŸé¡¹ç›®ä½œè€…æ‰€æœ‰ï¼›
+åœ¨å…·ä½“ç¬”è®°é¡µä¸­å¯èƒ½ä¸å¯¹ç¬”è®°æ¥æºå†è¡Œè¯´æ˜ã€‚
   
  
-## Ä¿Â¼
-1. [Ò»¸ö¼òµ¥µÄgo-microÊ¾Àı](./greeterservice)
-0. [micro api](./micro-api)  ÒÔHTTP·½Ê½°ÑÍâ½çÇëÇóÓ³Éäµ½±¾µØÎ¢·şÎñ    
-    1. handler´¦Àí·½Ê½Ö® [RPC API](./micro-api/rpc-api)    
-    0. handler´¦Àí·½Ê½Ö® [API](/go-micro-by-example/micro-api/api)
-    0. handler´¦Àí·½Ê½Ö® [Proxy API](/go-micro-by-example/micro-api/proxy-api)
-    0. handler´¦Àí·½Ê½Ö® [Web API](/go-micro-by-example/micro-api/web-api)
-    0. handler´¦Àí·½Ê½Ö® [Event](/go-micro-by-example/micro-api/event)
+## ç›®å½•
+1. [ä¸€ä¸ªç®€å•çš„go-microç¤ºä¾‹](./greeterservice)
+0. [micro api](./micro-api)  ä»¥HTTPæ–¹å¼æŠŠå¤–ç•Œè¯·æ±‚æ˜ å°„åˆ°æœ¬åœ°å¾®æœåŠ¡    
+    1. handlerå¤„ç†æ–¹å¼ä¹‹ [RPC API](./micro-api/rpc-api)    
+    0. handlerå¤„ç†æ–¹å¼ä¹‹ [API](/go-micro-by-example/micro-api/api)
+    0. handlerå¤„ç†æ–¹å¼ä¹‹ [Proxy API](/go-micro-by-example/micro-api/proxy-api)
+    0. handlerå¤„ç†æ–¹å¼ä¹‹ [Web API](/go-micro-by-example/micro-api/web-api)
+    0. handlerå¤„ç†æ–¹å¼ä¹‹ [Event](/go-micro-by-example/micro-api/event)
+    - [åˆ©ç”¨metaæ‹“å±•handlerå¤„ç†å™¨](/go-micro-by-example/micro-api/meta)
