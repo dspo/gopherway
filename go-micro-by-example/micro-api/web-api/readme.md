@@ -20,3 +20,8 @@ go run web.go
 打开 `http://127.0.0.1:8080/websocket/`
 
 默认会打开websocket连接。在Name栏中输入文本，点击send按钮便可以与后台websocket服务交互。
+
+### 链接
+[目录](/go-micro-by-example)  
+[上一节](/go-micro-by-example/micro-api/proxy-api)  
+[下一节]()

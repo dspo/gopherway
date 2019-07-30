@@ -32,4 +32,4 @@ POST请求到 /example/foo/bar会调用go.micro.api.example的 /example/foo/bar路由。
 ### 链接
 [目录](/go-micro-by-example)  
 [上一节](/go-micro-by-example/micro-api/api)  
-[下一节]()
+[下一节](/go-micro-by-example/micro-api/web-api)
