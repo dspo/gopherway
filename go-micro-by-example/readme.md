@@ -14,3 +14,4 @@
     0. handler处理方式之 [API](/go-micro-by-example/micro-api/api)
     0. handler处理方式之 [Proxy API](/go-micro-by-example/micro-api/proxy-api)
     0. handler处理方式之 [Web API](/go-micro-by-example/micro-api/web-api)
+    0. handler处理方式之 [Event](/go-micro-by-example/micro-api/event)
