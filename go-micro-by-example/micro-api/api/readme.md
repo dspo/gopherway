@@ -24,3 +24,7 @@ go run .
 
 <t> TODO: /example/foo/bar接口没测试通过 --> [handler/api.go](/go-micro-by-example/micro-api/api/handler/api.go)
 
+### 链接
+[目录](/go-micro-by-example)  
+[上一节](/go-micro-by-example/micro-api/rpc-api)  
+[下一节](/go-micro-by-example/micro-api/proxy-api)
