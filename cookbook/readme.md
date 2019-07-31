@@ -16,9 +16,7 @@
     - string & bytes
     - standard lib: strconv
     - number
-* core I/O interfaces
-    - [io.Reader & io.Writer](readme.md#io操作核心接口-ioreader--iowriter)
-    - io.Closer
+* [core I/O interfaces](/cookbook/io-interface)
 * file & file system
     - directories & files
     - [x] [操作CSV文件](filesystem/csv.go)
