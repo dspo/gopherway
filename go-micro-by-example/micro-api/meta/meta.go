@@ -1,13 +1,13 @@
 package main
 
 import (
-	"./proto"
 	"context"
-	"github.com/micro.bak/go-api"
-	"github.com/micro.bak/go-api/handler/rpc"
-	"github.com/micro.bak/go-micro/errors"
+	"github.com/micro/go-api/handler/rpc"
 	"github.com/micro/go-micro"
+	"github.com/micro/go-micro/api"
 	rapi "github.com/micro/go-micro/api/handler/api"
+	"github.com/microk/go-micro/errors"
+	"gopherway/go-micro-by-example/micro-api/meta/proto"
 	"log"
 )
 

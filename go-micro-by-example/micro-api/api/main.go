@@ -1,10 +1,10 @@
 package main
 
 import (
-	"./handler"
-	"./proto"
 	"github.com/micro/go-micro"
 	"github.com/prometheus/common/log"
+	"gopherway/go-micro-by-example/micro-api/api/handler"
+	"gopherway/go-micro-by-example/micro-api/api/proto"
 )
 
 func main() {

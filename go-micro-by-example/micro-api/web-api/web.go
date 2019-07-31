@@ -1,30 +1,60 @@
 package main
 
 import (
-	"github.com/gorilla/websocket"
-	"github.com/micro/go-web"
+	"fmt"
 	"log"
 	"net/http"
+
+	"github.com/gorilla/websocket"
+	"github.com/micro/go-micro/web"
 )
 
-var upGrader = websocket.Upgrader{CheckOrigin: func(r *http.Request) bool {
-	return true
-}}
+var upGrader = websocket.Upgrader{
+	CheckOrigin: func(r *http.Request) bool { return true },
+}
 
-func hi(w http.ResponseWriter, r *http.Request)  {
+func main() {
+	// New web service
+	service := web.NewService(
+		web.Name("go.micro.web"),
+	)
+
+	if err := service.Init(); err != nil {
+		log.Fatal("Init", err)
+	}
+
+	// static files
+	service.Handle("/websocket/", http.StripPrefix("/websocket/", http.FileServer(http.Dir("html"))))
+
+	// websocket interface
+	service.HandleFunc("/websocket/hi", hi)
+
+	service.HandleFunc("/websocket/test", func(writer http.ResponseWriter, request *http.Request) {
+		log.Println("client request /test")
+		fmt.Fprint(writer, "you request test success")
+	})
+
+	if err := service.Run(); err != nil {
+		log.Fatal("Run: ", err)
+	}
+}
+
+func hi(w http.ResponseWriter, r *http.Request) {
+
 	c, err := upGrader.Upgrade(w, r, nil)
 	if err != nil {
-		log.Println("upgrade: %s", err)
+		log.Printf("upgrade: %s", err)
 		return
 	}
-	defer c.Close()
 
+	defer c.Close()
 	for {
 		mt, message, err := c.ReadMessage()
 		if err != nil {
 			log.Println("read:", err)
 			break
 		}
+
 		log.Printf("recv: %s", message)
 
 		err = c.WriteMessage(mt, message)
@@ -32,26 +62,5 @@ func hi(w http.ResponseWriter, r *http.Request)  {
 			log.Println("write:", err)
 			break
 		}
-	}
-}
-
-func main() {
-	//new web service
-	service := web.NewService(
-		web.Name("go.micro.web.websocket"),
-		)
-	if err := service.Init(); err != nil{
-		log.Fatal("Init,", err)
-	}
-
-	//static files
-	service.Handle("/websocket/",
-		http.StripPrefix("/websocket/",	http.FileServer(http.Dir("html"))))
-
-	//websocket interface
-	service.HandleFunc("/websocket/hi", hi)
-
-	if err := service.Run(); err != nil{
-		log.Fatal("Run: ", err)
 	}
 }

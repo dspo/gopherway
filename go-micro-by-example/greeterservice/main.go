@@ -1,12 +1,12 @@
 package main
 
 import (
-	"./handler"
-	"./proto"
 	"context"
 	"fmt"
 	"github.com/micro/cli"
 	"github.com/micro/go-micro"
+	"gopherway/go-micro-by-example/greeterservice/handler"
+	"gopherway/go-micro-by-example/greeterservice/proto"
 	"os"
 )
 
