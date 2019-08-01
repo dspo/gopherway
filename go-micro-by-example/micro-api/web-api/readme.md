@@ -7,13 +7,18 @@
 API会向注册中心查询服务信息，将请求路由转向合适的后台服务上。故而我们直接使用go-web作为后台服务，因为它可以直接注册，为了方便我们不直接从头写可以注册的服务。
 
 ## 使用方法
-以web模式运行API，因为我们的应用是在web空间下，所以我们把api的启动空间设置为go.micro.web
+启动consul
+```bash
+concult agent -dev
+```
+
+以web模式运行API，因为我们的应用是在web空间下，所以我们把api的启动空间设置为go.micro.web  
 ```bash
 micro api --handler=web --namespace=go.micro.web
 ```
-运行web应用
+运行web-server应用，如果web-server找不到consul服务，使用 `--registry_address` 指定服务地址。
 ```bash
-go run web.go
+go run web-server.go --registry_address=localhost:8300
 ```
 
 ## 演示

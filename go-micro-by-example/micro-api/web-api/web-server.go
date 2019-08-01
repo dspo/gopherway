@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"net/http"
 
@@ -16,7 +15,7 @@ var upGrader = websocket.Upgrader{
 func main() {
 	// New web service
 	service := web.NewService(
-		web.Name("go.micro.web"),
+		web.Name("go.micro.web.websocket"),
 	)
 
 	if err := service.Init(); err != nil {
@@ -28,11 +27,6 @@ func main() {
 
 	// websocket interface
 	service.HandleFunc("/websocket/hi", hi)
-
-	service.HandleFunc("/websocket/test", func(writer http.ResponseWriter, request *http.Request) {
-		log.Println("client request /test")
-		fmt.Fprint(writer, "you request test success")
-	})
 
 	if err := service.Run(); err != nil {
 		log.Fatal("Run: ", err)
