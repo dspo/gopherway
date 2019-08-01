@@ -22,7 +22,7 @@
     - [x] [操作CSV文件](filesystem/csv.go)
     - [x] [解析JSON文本](filesystem/json.go)
     - working with text template & HTML templates
-    - [x] [使用临时文件](readme.md#使用临时文件)
+    - [x] [使用临时文件](/cookbook/io-interface#使用临时文件)
 * context in Go
 * concurrency in Go
 * databases & storage
