@@ -16,3 +16,4 @@
     0. handler处理方式之 [Web API](/go-micro-by-example/micro-api/web-api)
     0. handler处理方式之 [Event](/go-micro-by-example/micro-api/event)
     - handler处理器拓展 [Meta](/go-micro-by-example/micro-api/meta)
+0. [典型的micro/micro生态项目结构](/go-micro-by-example/go-micro-project-tree.md)    
