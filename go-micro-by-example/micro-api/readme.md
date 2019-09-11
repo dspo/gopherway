@@ -1,45 +1,45 @@
 # micro api
-> ×¢:´óÁ¿ÄÚÈÝÄÚÈÝÒýÓÃ×Ô[micro-in-cn/all-in-one](https://github.com/micro-in-cn/all-in-one/tree/master/basic-practices/micro-api)£¬²»ÒÔÒýÓÃ·ûºÅ±êºÅ±ê×¢µÄÄÚÈÝÒ²¿ÉÄÜÊÇÒýÓÃÄÚÈÝ¡£  
+> æ³¨:å¤§é‡å†…å®¹å†…å®¹å¼•ç”¨è‡ª[micro-in-cn/all-in-one](https://github.com/micro-in-cn/all-in-one/tree/master/basic-practices/micro-api)ï¼Œä¸ä»¥å¼•ç”¨ç¬¦å·æ ‡å·æ ‡æ³¨çš„å†…å®¹ä¹Ÿå¯èƒ½æ˜¯å¼•ç”¨å†…å®¹ã€‚  
 
->API±¾ÖÊÉÏ¾ÍÒ»¸ö·þÎñÍø¹Ø£¬Ëü¾ß±¸¶¯Ì¬Â·ÓÉ¡¢·þÎñ·¢ÏÖµÄÄÜÁ¦£¬ÒÔHTTP·½Ê½°ÑÍâ½çÇëÇóÓ³Éäµ½±¾µØÎ¢·þÎñ£¬ÒÔ¶ÔÍâÌá¹©·þÎñ¡£
+>APIæœ¬è´¨ä¸Šå°±ä¸€ä¸ªæœåŠ¡ç½‘å…³ï¼Œå®ƒå…·å¤‡åŠ¨æ€è·¯ç”±ã€æœåŠ¡å‘çŽ°çš„èƒ½åŠ›ï¼Œä»¥HTTPæ–¹å¼æŠŠå¤–ç•Œè¯·æ±‚æ˜ å°„åˆ°æœ¬åœ°å¾®æœåŠ¡ï¼Œä»¥å¯¹å¤–æä¾›æœåŠ¡ã€‚
 >
->Í¨¹ý·þÎñ·¢ÏÖ£¬ÅäºÏÄÚÖÃµÄ`ÃüÃû¿Õ¼ä£¨Namespace£©`¹æÔò£¬API¿ÉÒÔ°ÑÇëÇóurl½âÎöÓ³Éäµ½Æ¥Åä¸ÃÃüÃû¿Õ¼ä¹æÔòµÄ·þÎñ½Ó¿Ú¡£
+>é€šè¿‡æœåŠ¡å‘çŽ°ï¼Œé…åˆå†…ç½®çš„`å‘½åç©ºé—´ï¼ˆNamespaceï¼‰`è§„åˆ™ï¼ŒAPIå¯ä»¥æŠŠè¯·æ±‚urlè§£æžæ˜ å°„åˆ°åŒ¹é…è¯¥å‘½åç©ºé—´è§„åˆ™çš„æœåŠ¡æŽ¥å£ã€‚
 >
->ÔÚMicroÌåÏµÖÐ£¬·þÎñ¶¼»áÓÐ×Ô¼ºµÄÃüÃû¿Õ¼ä£¬¶øAPIµÄÄ¬ÈÏÃüÃû¿Õ¼äÊÇ`go.micro.api`¡£Í¨³££¬²¿ÊðÔÚÆäºóÌá¹©¾ßÌå½Ó¿ÚµÄÎ¢·þÎñ£¬ÎÒÃÇ»áÄ¬ÈÏ°´ÕÕ Micro·ç¸ñ½«ËüÃÇµÄÃüÃû¿Õ¼äÉèÖÃÎª`go.micro.api.example`µÄÑùÊ½£¬example±ãÊÇ¾ßÌåµÄ·þÎñÃû£¬Èç¹ûÐèÒª¸Ä¶¯Õâ¸öÖµ£¬ÔÚÆô¶¯Ê±Ö¸¶¨` --namespace=`Ö¸¶¨Ãû³ÆÖ¸Áî¼´¿É¡£
+>åœ¨Microä½“ç³»ä¸­ï¼ŒæœåŠ¡éƒ½ä¼šæœ‰è‡ªå·±çš„å‘½åç©ºé—´ï¼Œè€ŒAPIçš„é»˜è®¤å‘½åç©ºé—´æ˜¯`go.micro.api`ã€‚é€šå¸¸ï¼Œéƒ¨ç½²åœ¨å…¶åŽæä¾›å…·ä½“æŽ¥å£çš„å¾®æœåŠ¡ï¼Œæˆ‘ä»¬ä¼šé»˜è®¤æŒ‰ç…§ Microé£Žæ ¼å°†å®ƒä»¬çš„å‘½åç©ºé—´è®¾ç½®ä¸º`go.micro.api.example`çš„æ ·å¼ï¼Œexampleä¾¿æ˜¯å…·ä½“çš„æœåŠ¡åï¼Œå¦‚æžœéœ€è¦æ”¹åŠ¨è¿™ä¸ªå€¼ï¼Œåœ¨å¯åŠ¨æ—¶æŒ‡å®š` --namespace=`æŒ‡å®šåç§°æŒ‡ä»¤å³å¯ã€‚
 
-### handler ´¦ÀíÆ÷
-Micro APIÄ¿Ç°ÓÐ5ÖÖ´¦Àí·½Ê½£¬¿ÉÒÔ¸ù¾ÝÐèÇó½«APIÉèÖÃ³ÉÖ¸¶¨µÄÀàÐÍ¡£
+### handler å¤„ç†å™¨
+Micro APIç›®å‰æœ‰5ç§å¤„ç†æ–¹å¼ï¼Œå¯ä»¥æ ¹æ®éœ€æ±‚å°†APIè®¾ç½®æˆæŒ‡å®šçš„ç±»åž‹ã€‚
 1.	**RPC**  
-    Ä¬ÈÏÑ¡Ïî£¬Í¨¹ýRPCÏògo-microÓ¦ÓÃ×ªËÍÇëÇó£¬Í¨³£Ö»´«ËÍÇëÇóbody£¬Í·ÐÅÏ¢²»·â×°¡£Ö»½ÓÊÕPOSTÇëÇó¡£
+    é»˜è®¤é€‰é¡¹ï¼Œé€šè¿‡RPCå‘go-microåº”ç”¨è½¬é€è¯·æ±‚ï¼Œé€šå¸¸åªä¼ é€è¯·æ±‚bodyï¼Œå¤´ä¿¡æ¯ä¸å°è£…ã€‚åªæŽ¥æ”¶POSTè¯·æ±‚ã€‚
 0.  **API**  
-	ÀàËÆÓÚrpc£¬µ«ÊÇ<u>»á°ÑÍêÕûµÄhttpÍ··â×°ÏòÏÂ´«ËÍ</u>£¬²»ÏÞÖÆÇëÇó·½·¨¡£  
-0.	**HTTP**»ò**proxy**  
-	ÒÔ·´Ïò´úÀíµÄ·½Ê½Ê¹ÓÃAPI£¬Ïàµ±ÓÚ°ÑÆÕÍ¨µÄwebÓ¦ÓÃ²¿ÊðÔÚAPIÖ®ºó£¬
-	ÈÃÍâ½çÏñµ÷api½Ó¿ÚÒ»Ñùµ÷ÓÃweb·þÎñ¡£  
+	ç±»ä¼¼äºŽrpcï¼Œä½†æ˜¯<u>ä¼šæŠŠå®Œæ•´çš„httpå¤´å°è£…å‘ä¸‹ä¼ é€</u>ï¼Œä¸é™åˆ¶è¯·æ±‚æ–¹æ³•ã€‚  
+0.	**HTTP**æˆ–**proxy**  
+	ä»¥åå‘ä»£ç†çš„æ–¹å¼ä½¿ç”¨APIï¼Œç›¸å½“äºŽæŠŠæ™®é€šçš„webåº”ç”¨éƒ¨ç½²åœ¨APIä¹‹åŽï¼Œ
+	è®©å¤–ç•Œåƒè°ƒapiæŽ¥å£ä¸€æ ·è°ƒç”¨webæœåŠ¡ã€‚  
 0.	**web**  
-	Óëhttp²î²»¶à£¬µ«ÊÇÖ§³Öwebsocket¡£  
+	ä¸Žhttpå·®ä¸å¤šï¼Œä½†æ˜¯æ”¯æŒwebsocketã€‚  
 0.	**event**  
-    ´úÀíeventÊÂ¼þ·þÎñÀàÐÍµÄÇëÇó
+    ä»£ç†eventäº‹ä»¶æœåŠ¡ç±»åž‹çš„è¯·æ±‚
 *	**meta**
-	ÔªÊý¾Ý£¬Í¨¹ýÔÚ´úÂëÖÐµÄÅäÖÃÑ¡ÔñÊ¹ÓÃÉÏÊöÖÐµÄÄ³Ò»¸ö´¦ÀíÆ÷¡£
-	Õâ²»ÊÇÒ»¸öÄ£Ê½£¬Ö»ÊÇ¶Ôapi»òrpcÄ£Ê½ÏÂµÄÀ©Õ¹Ê¹ÓÃ·½·¨¡£  
+	å…ƒæ•°æ®ï¼Œé€šè¿‡åœ¨ä»£ç ä¸­çš„é…ç½®é€‰æ‹©ä½¿ç”¨ä¸Šè¿°ä¸­çš„æŸä¸€ä¸ªå¤„ç†å™¨ã€‚
+	è¿™ä¸æ˜¯ä¸€ä¸ªæ¨¡å¼ï¼Œåªæ˜¯å¯¹apiæˆ–rpcæ¨¡å¼ä¸‹çš„æ‰©å±•ä½¿ç”¨æ–¹æ³•ã€‚  
 
 
-### RPC/APIÀàÐÍµÄÇëÇóÓ³Éä
+### RPC/APIç±»åž‹çš„è¯·æ±‚æ˜ å°„
 
-MicroÄÚ²¿ÓÐ½«httpÇëÇóÂ·¾¶Ó³Éäµ½·þÎñµÄ»úÖÆ£¬Ó³Éä¹æÔò¿ÉÒÔÍ¨¹ýÏÂ±í½éÉÜ
+Microå†…éƒ¨æœ‰å°†httpè¯·æ±‚è·¯å¾„æ˜ å°„åˆ°æœåŠ¡çš„æœºåˆ¶ï¼Œæ˜ å°„è§„åˆ™å¯ä»¥é€šè¿‡ä¸‹è¡¨ä»‹ç»
 
-httpÂ·¾¶    |    ºóÌ¨·þÎñ    |    ½Ó¿Ú·½·¨
+httpè·¯å¾„    |    åŽå°æœåŠ¡    |    æŽ¥å£æ–¹æ³•
 ----    |    ----    |    ----
 /foo/bar    |    go.micro.api.foo    |    Foo.Bar
 /foo/bar/baz    |    go.micro.api.foo    |    Bar.Baz
 /foo/bar/baz/cat    |    go.micro.api.foo.bar    |    Baz.Cat
 
-Ä¬ÈÏµÄÃüÃû¿Õ¼äÊÇ**go.micro.api**£¬µ«¿ÉÒÔÍ¨¹ý`--namespace`Ö¸Áî×Ô¶¨Òå¡£
+é»˜è®¤çš„å‘½åç©ºé—´æ˜¯**go.micro.api**ï¼Œä½†å¯ä»¥é€šè¿‡`--namespace`æŒ‡ä»¤è‡ªå®šä¹‰ã€‚
 
-¶øÓÐÐ©´ø°æ±¾ºÅµÄÂ·¾¶£¬Ò²¿ÉÒÔÓ³Éäµ½·þÎñÃûÉÏ
+è€Œæœ‰äº›å¸¦ç‰ˆæœ¬å·çš„è·¯å¾„ï¼Œä¹Ÿå¯ä»¥æ˜ å°„åˆ°æœåŠ¡åä¸Š
 
-ÇëÇóÂ·¾¶    |    ºóÌ¨·þÎñ    |    ½Ó¿Ú·½·¨
+è¯·æ±‚è·¯å¾„    |    åŽå°æœåŠ¡    |    æŽ¥å£æ–¹æ³•
 ----    |    ----    |    ----
 /foo/bar    |    go.micro.api.foo    |    Foo.Bar
 /v1/foo/bar    |    go.micro.api.v1.foo    |    Foo.Bar
@@ -47,30 +47,30 @@ httpÂ·¾¶    |    ºóÌ¨·þÎñ    |    ½Ó¿Ú·½·¨
 /v2/foo/bar    |    go.micro.api.v2.foo    |    Foo.Bar
 /v2/foo/bar/baz    |    go.micro.api.v2.foo    |    Bar.Baz
 
-´ÓÉÏÃæµÄÓ³Éä¹æÔòÖÐ¿ÉÒÔ¿´³ö£¬**RPC/API**Ä£Ê½ÏÂ£¬Â·¾¶ºóÃæµÄÁ½¸ö²ÎÊý»á±»×éºÏ³ÉGolang¹«¹²·½·¨Â·¾¶Ãû£¬¶øÊ£ÏÂµÄ»á¼ÓÉÏÃüÃû¿Õ¼äÇ°×º×é³É·þÎñÃû¡£±ÈÈç£º
+ä»Žä¸Šé¢çš„æ˜ å°„è§„åˆ™ä¸­å¯ä»¥çœ‹å‡ºï¼Œ**RPC/API**æ¨¡å¼ä¸‹ï¼Œè·¯å¾„åŽé¢çš„ä¸¤ä¸ªå‚æ•°ä¼šè¢«ç»„åˆæˆGolangå…¬å…±æ–¹æ³•è·¯å¾„åï¼Œè€Œå‰©ä¸‹çš„ä¼šåŠ ä¸Šå‘½åç©ºé—´å‰ç¼€ç»„æˆæœåŠ¡åã€‚æ¯”å¦‚ï¼š
 
-`/v1/foo/bar/baz`£¬ÆäÖÐ`bar/baz`Ê××ÖÄ¸´óÐ´×ª³É`Bar.Baz`·½·¨Â·¾¶£»Ê£ÏÂµÄ`/v1/foo/`£¬¸½¼ÓÉÏÃüÃû¿Õ¼äÇ°×º`go.micro.api`×é³É
-`go.micro.api.v1.foo`¡£  
+`/v1/foo/bar/baz`ï¼Œå…¶ä¸­`bar/baz`é¦–å­—æ¯å¤§å†™è½¬æˆ`Bar.Baz`æ–¹æ³•è·¯å¾„ï¼›å‰©ä¸‹çš„`/v1/foo/`ï¼Œé™„åŠ ä¸Šå‘½åç©ºé—´å‰ç¼€`go.micro.api`ç»„æˆ
+`go.micro.api.v1.foo`ã€‚  
 
-### proxyÀàÐÍµÄÇëÇóÓ³Éä
-Èç¹ûÎÒÃÇÆô¶¯**API**Ê±´«Ö¸Áî`--handler=http`£¬ÄÇÃ´**API**±ã»á·´Ïò´úÀíÇëÇóµ½¾ßÓÐAPIÃüÃû¿Õ¼äµÄºóÌ¨·þÎñÖÐ¡£  
-±ÈÈç£º
+### proxyç±»åž‹çš„è¯·æ±‚æ˜ å°„
+å¦‚æžœæˆ‘ä»¬å¯åŠ¨**API**æ—¶ä¼ æŒ‡ä»¤`--handler=http`ï¼Œé‚£ä¹ˆ**API**ä¾¿ä¼šåå‘ä»£ç†è¯·æ±‚åˆ°å…·æœ‰APIå‘½åç©ºé—´çš„åŽå°æœåŠ¡ä¸­ã€‚  
+æ¯”å¦‚ï¼š
   
-ÇëÇóÂ·¾¶    |    ·þÎñ    |    ºóÌ¨·þÎñÂ·¾¶
+è¯·æ±‚è·¯å¾„    |    æœåŠ¡    |    åŽå°æœåŠ¡è·¯å¾„
 ---    |    ---    |    ---
 /greeter    |    go.micro.api.greeter    |    /greeter
 /greeter/:name    |    go.micro.api.greeter    |    /greeter/:name
 
-### eventÀàÐÍµÄÇëÇóÓ³Éä
-Æô¶¯**API**Ê±´«Ö¸Áî`--handler=event`£¬ÄÇÃ´**API**±ã»á·´Ïò´úÀíÇëÇóµ½¾ßÓÐAPIÃüÃû¿Õ¼äµÄºóÌ¨ÊÂ¼þÏû·Ñ·þÎñÖÐ¡£  
-±ÈÈç£¨ÃüÃû¿Õ¼äÉèÖÃÎªgo.micro.evt£©£º  
+### eventç±»åž‹çš„è¯·æ±‚æ˜ å°„
+å¯åŠ¨**API**æ—¶ä¼ æŒ‡ä»¤`--handler=event`ï¼Œé‚£ä¹ˆ**API**ä¾¿ä¼šåå‘ä»£ç†è¯·æ±‚åˆ°å…·æœ‰APIå‘½åç©ºé—´çš„åŽå°äº‹ä»¶æ¶ˆè´¹æœåŠ¡ä¸­ã€‚  
+æ¯”å¦‚ï¼ˆå‘½åç©ºé—´è®¾ç½®ä¸ºgo.micro.evtï¼‰ï¼š  
 
-ÇëÇóÂ·¾¶    |    ·þÎñ    |    ·½·¨
+è¯·æ±‚è·¯å¾„    |    æœåŠ¡    |    æ–¹æ³•
 ---    |    ---    |    ---
-/user/login    |    go.micro.evt.user    |    ÕìÌýÆ÷¶ÔÏó£¨Ê¾ÀýÖÐµÄnew(Event)£©ËùÓÐ¹«¹²·½·¨£¬ÇÒ·½·¨ÒªÓÐctxºÍÊÂ¼þ²ÎÊý
+/user/login    |    go.micro.evt.user    |    ä¾¦å¬å™¨å¯¹è±¡ï¼ˆç¤ºä¾‹ä¸­çš„new(Event)ï¼‰æ‰€æœ‰å…¬å…±æ–¹æ³•ï¼Œä¸”æ–¹æ³•è¦æœ‰ctxå’Œäº‹ä»¶å‚æ•°
 
 
-### Á´½Ó
-* [Ä¿Â¼](/go-micro-by-example)
-* [ÉÏÒ»½Ú£ºÒ»¸ö¼òµ¥µÄgo-microÊ¾Àý](/go-micro-by-example/greeterservice)
-* [ÏÂÒ»½Ú£ºrcp apiÊ¾Àý](/go-micro-by-example/micro-api/rpc-api)
+### é“¾æŽ¥
+* [ç›®å½•](/go-micro-by-example)
+* [ä¸Šä¸€èŠ‚ï¼šä¸€ä¸ªç®€å•çš„go-microç¤ºä¾‹](/go-micro-by-example/greeterservice)
+* [ä¸‹ä¸€èŠ‚ï¼šrcp apiç¤ºä¾‹](/go-micro-by-example/micro-api/rpc-api)
