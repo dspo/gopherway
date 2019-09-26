@@ -38,6 +38,11 @@ channel, goroutine, context, reflex等Go语言核心特性；http客户端与服
 #### 实践主题
 * [go-micro by example](go-micro-by-example)
 
+## [Concurrency in Go](concurrency-in-go)
+### Go 语言并发编程 提要
+* Go语言并发组件
+* Go语言并发模型
+
 ## Learning source & Action
 ### 入门
 * 《Go程序设计语言》 [京东](https://item.jd.com/12187988.html)
