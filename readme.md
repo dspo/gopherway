@@ -1,6 +1,9 @@
 # Gopher Way
 
 ## [Go Syntax](go_syntax)
+> 入门编程和Go语言
+
+Go语言基本语法
 以下链接指向菜鸟教程，但不包含教程的全部内容
 * [基础语法](https://www.runoob.com/go/go-basic-syntax.html)
 * [数据类型](https://www.runoob.com/go/go-data-types.html)
@@ -16,24 +19,63 @@
 * [错误处理](https://www.runoob.com/go/go-error-handling.html)
 
 ## [Briefer Tutorial of Data Structures & Algorithms in Go](data_structures/go-D&A-briefer-tutorial.md)
-![](https://img.shields.io/badge/download-89-brightgreen.svg)  
-[PDF eBook - en](data_structures/go-data-structures-and-algorithms.pdf)   <- 如无英文阅读障碍，可直接阅读电子书; 如文件过大不能在线阅读可打开页面后下载到本地阅读   
-简明介绍常见数据结构与常用算法的Go语言实现。
+> 数据结构与算法简明教程 - Go语言描述
 
 ## [Cookbook and Practice](cookbook/readme.md)
+> Go语言烹饪书 Go语言的操作细节
+
+* [数据操作的核心: string & bytes](bytestrings)
+    - 核心接口: io.Writer & io.Reader
+    - [x] [bytes.Buffer](bytestrings/buffer.go) -> 处理流数据时，用bytes.Buffer而不要用[]bytes 
+    - [x] [ioutil.ReadAll](bytestrings/buffer.go) -> 读取io.Reader内容的一个快捷方式
+    - regex
+    - format
+* 时间日期操作: date and time
+    - time.Sleep 一定时间后再执行后面的程序
+    - time.After 要求某段程序至少要执行一定时间
+    - time.Since 计算时间差， time.Now().Sub(t)的快捷方式
+    - (t time.time).Sub 计算时间差
+    - time.Now 计算当前时间
+* type conversion
+    - string & bytes
+    - standard lib: strconv
+    - number
+* [I/O操作的核心: io.Writer & io.Reader interfaces](/cookbook/io-interface)
+* 文件和文件系统 file & file system
+    - directories & files
+    - [x] [操作CSV文件](filesystem/csv.go)
+    - [x] [解析JSON文本](filesystem/json.go)
+    - working with text template & HTML templates
+    - [x] [使用临时文件](/cookbook/io-interface#使用临时文件)
+* context in Go
+* concurrency in Go
+* databases & storage
+    - db/sql
+    - mySQL
+    - postgreSQL
+    - SQLite
+    - Redis
+    - MongoDB
+* http client programing
+* http server programing
+* RPC & gRPC
+    - 基于TCP的[RPC服务端](rpc/jsonrpc_tcp/server)与[端客户端](rpc/jsonrpc_tcp/server)  
+    - 基于HTTP的[RPC服务端](rpc/jsonrpc_http/server)与[端客户端](rpc/jsonrpc_http/server)  
+* socket & web-socket
+* [micro-services for applications](rpc/protobuf)
+    - [基于go-micro编写一个微服务](../go-micro-by-example/greeterservice/readme.md)  
+* distributed
+* 测试  
+    参见[algorithms中的测试文件](../algorithms)，可以了解到testing的使用。  
+    - [x] testing  
+    用testing.M管理测试中的依赖顺序，用testing.T进行单元测试。  
+    - [x] benchmark  
+    用testing.B进行性能测试，但要注意被测函数的时间开销应该是收敛的，否则无法进行性能测试。  
+* data streams  
+* reflex 
 涉及重要接口使用；正则表达式、常用字符串处理技巧；时间日期处理；文件操作与文件系统；
 channel, goroutine, context, reflex等Go语言核心特性；http客户端与服务端编程；gRPC；
 微服务；分布式；测试；数据流操作等。  
-### 主题提要
-#### 初阶主题
-* [bytes and string](cookbook/bytestrings)
-* [date and time](cookbook/date_and_time)
-* [file system](cookbook/filesystem)
-* [important interfaces](cookbook/interfaces)
-#### 中阶主题
-* [design patterns](cookbook/design_patterns)
-* [cgo](cookbook/cgo)
-* [rpc](cookbook/rpc)
 
 #### 实践主题
 * [go-micro by example](go-micro-by-example)

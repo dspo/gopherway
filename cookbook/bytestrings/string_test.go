@@ -1,6 +1,8 @@
 package bytestrings
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestSearchString(t *testing.T) {
 	SearchString()
