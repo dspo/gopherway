@@ -1,3 +1,3 @@
-module gopherway
+module github.com/dspo/gopherway
 
-go 1.12
+go 1.14

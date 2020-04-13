@@ -22,7 +22,7 @@ Go语言基本语法
 > 数据结构与算法简明教程 - Go语言描述
 
 ## [Cookbook and Practice](cookbook/readme.md)
-> Go语言烹饪书 Go语言的操作细节
+> Go语言的操作细节
 
 * [数据操作的核心: string & bytes](bytestrings)
     - 核心接口: io.Writer & io.Reader
@@ -47,7 +47,7 @@ Go语言基本语法
     - [x] [解析JSON文本](filesystem/json.go)
     - working with text template & HTML templates
     - [x] [使用临时文件](/cookbook/io-interface#使用临时文件)
-* context in Go
+* context
 * concurrency in Go
 * databases & storage
     - db/sql
@@ -77,17 +77,13 @@ Go语言基本语法
 channel, goroutine, context, reflex等Go语言核心特性；http客户端与服务端编程；gRPC；
 微服务；分布式；测试；数据流操作等。  
 
-#### 实践主题
-* [go-micro by example](go-micro-by-example)
-
-## [Concurrency in Go](concurrency-in-go)
-### Go 语言并发编程 提要
+## [Concurrency in Go](concurrency-in-go) Go语言并发编程
 * Go语言并发组件
 * Go语言并发模型
 
-## [network-programming with go]()
+## [network-programming with go](network-programming_with_go) 网络编程 - Go语言描述
 
-## Learning source & Action
+## Learning source 资源
 ### 入门
 * 《Go程序设计语言》 [京东](https://item.jd.com/12187988.html)
 * The Way to Go [在线](https://github.com/Unknwon/the-way-to-go_ZH_CN)   
@@ -122,7 +118,7 @@ channel, goroutine, context, reflex等Go语言核心特性；http客户端与服
     * [micro/go-micro](https://github.com/micro/go-micro) 微服务开发框架 | 资料: [go-micro 最佳实践](https://github.com/micro-in-cn/all-in-one), [go-micro 特性全合一教程](https://github.com/micro-in-cn/tutorials)
     * [prometheus/prometheus](https://github.com/prometheus/prometheus) 系统与时间序列数据库监控管理工具 
     * [hashicorp/consul](https://github.com/hashicorp/consul) 分布式高可用数据中心
-- DevOpts
+- DevOps
     * [CodisLabs/codis](https://github.com/CodisLabs/codis) 分布式Redis解决方案
     * [etcd-io/etcd](https://github.com/etcd-io/etcd) 高可用的分布式键值数据库
     * [kubernetes/kubernetes（k8s）](https://github.com/kubernetes/kubernetes) 基于容器技术的分布式架构领先方案
