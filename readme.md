@@ -8,8 +8,8 @@ Go语言基本语法
 * [基础语法](https://www.runoob.com/go/go-basic-syntax.html)
 * [数据类型](https://www.runoob.com/go/go-data-types.html)
 * [变量](https://www.runoob.com/go/go-variables.html)
-* [条件语句](https://www.runoob.com/go/go-decision-making.html)
-* [循环语句](https://www.runoob.com/go/go-loops.html)
+* [分支](https://www.runoob.com/go/go-decision-making.html)
+* [循环](https://www.runoob.com/go/go-loops.html)
 * [函数](https://www.runoob.com/go/go-functions.html)
 * [数组](https://www.runoob.com/go/go-arrays.html) [切片](https://www.runoob.com/go/go-slice.html)
 * [指针](https://www.runoob.com/go/go-pointers.html)
@@ -113,7 +113,8 @@ channel, goroutine, context, reflex等Go语言核心特性；http客户端与服
     * [gin-gonic/gin](https://github.com/gin-gonic/gin) Go开发工程师招聘启示提及最多的Web开发框架 
     * [astaxie/beego](github.com/astaxie/beego) <- Go语言中的Django, 一站式Web开发框架  
     * [gorilla/websocket](https://github.com/gorilla/websocket) 流行的第三方websocket库
-    - [golang.org/x/net/websocket](http://golang.org/x/net/websocket) 官方维护的websocket库
+    - [nhooyr.io/websocket](https://nhooyr.io/websocket) 流行的websocket库
+    - [golang.org/x/net/websocket](http://golang.org/x/net/websocket) ~~官方维护的websocket库~~
     * [caddyserver/caddy](https://github.com/caddyserver/caddy) 支持HTTP/2、原生支持HTTPS的**Web服务器**  
     * [micro/go-micro](https://github.com/micro/go-micro) 微服务开发框架 | 资料: [go-micro 最佳实践](https://github.com/micro-in-cn/all-in-one), [go-micro 特性全合一教程](https://github.com/micro-in-cn/tutorials)
     * [prometheus/prometheus](https://github.com/prometheus/prometheus) 系统与时间序列数据库监控管理工具 

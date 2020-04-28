@@ -36,11 +36,11 @@
 Go语言实现单例模式的方法与纯OO(object-oriented, 面向对象)的语言(如Java, C++, 有静态成员)有所不同,
 Go语言中, 并没有静态成员的概念, 但是Go语言中的包级别变量, 可以做到类似的效果.
 
-我创建了一个go module: [go-design-patterns](/go-design-paterns),
-module下建了一个目录[go-design-patterns/singleton](/go-design-patterns/singleton),
+我创建了一个go module: [github.com/dspo/gopherway/go-design-patterns](/go-design-paterns),
+module下建了一个目录[code/singleton](/go-design-patterns/code/singleton),
 用来编写单例模式的示例代码.
 
-> singleton/singleton.go
+> /go-design-patterns/code/singleton/singleton.go
 ```go
 package singleton
 
@@ -66,3 +66,27 @@ func GetInstance() Singleton {
 	return instance
 }
 ```
+
+### sync.Once
+`sync.Once` 是Go语言并发组件中常用工具, 其参数是传入一个函数, Go语言层面保证这个函数只被执行一次.
+> /go-design-patterns/code/singleton/once.go
+```go
+package singleton
+
+import (
+	"sync"
+)
+
+var o sync.Once
+
+func GetInstance2() Singleton {
+	o.Do(func() {
+		instance = new(singleton)
+	})
+	return instance
+}
+```
+如上代码中, GetInstance2也能保证获取是示例永远是同一个示例. 
+ 两种实现单例的方式可任选一种, 但不要混用, 混用后就不能保证单例了.
+ 
+注意示例代码中用`o`命名变量, 不代表推荐这种明明风格.

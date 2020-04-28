@@ -1,7 +1,6 @@
 # Go数据结构与算法简明教程
-
-![](https://img.shields.io/badge/download-89-brightgreen.svg)  
-[PDF eBook - en](data_structures/go-data-structures-and-algorithms.pdf)   <- 如无英文阅读障碍，可直接阅读电子书; 如文件过大不能在线阅读可打开页面后下载到本地阅读
+  
+[PDF eBook - en](data_structures/go-data-structures-and-algorithms.pdf) 
 
 
 * Search algorithms
