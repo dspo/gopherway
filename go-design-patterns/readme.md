@@ -10,8 +10,7 @@
     创建模式主要用于提供开箱即用的对象.
     - [Singleton - 单例模式](docs/01-singleton-design-pattern.md)
     - [Builder - 构造者模式](docs/02-builder-design-pattern.md)
-    - Factory
-    - Prototype
+    - [Factory - 工厂方法模式](docs/03-factory-design-pattern.md)
     - Abstract factory
 
 0. ## 结构化模式(一)

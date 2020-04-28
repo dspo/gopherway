@@ -20,8 +20,6 @@
 
 ## 示例 - 汽车生产商
 
-### 要求与验收标准
-
 ### 示例代码
 > builder/creational/creational.go
 ```go
