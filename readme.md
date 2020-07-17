@@ -83,6 +83,8 @@ channel, goroutine, context, reflex等Go语言核心特性；http客户端与服
 
 ## [network-programming with go](network-programming_with_go) 网络编程 - Go语言描述
 
+## [Go语言开发工程师千千问](questions)
+
 ## Learning source 资源
 ### 入门
 * 《Go程序设计语言》 [京东](https://item.jd.com/12187988.html)

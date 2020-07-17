@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/gopherway.iml" filepath="$PROJECT_DIR$/.idea/gopherway.iml" />
-      <module fileurl="file://C:/192.168.88.251/svn/995120-platform/995120-center/project/combo/code/golang/trunk/logger_persistence/logger_persistence.iml" filepath="C:/192.168.88.251/svn/995120-platform/995120-center/project/combo/code/golang/trunk/logger_persistence/logger_persistence.iml" />
     </modules>
   </component>
 </project>
