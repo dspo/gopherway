@@ -6,25 +6,32 @@
     package main
     
     type Naming interface {
-       SetName(name string)
+        SetName(name string)
     }
-   
+    
     type Person struct {
-       name string   
+        name string
     }
-   
+    
+    func (p *Person) SetName(name string) {
+        p.name = name
+    }
+    
     type Student struct {
-       Person
+        Person
     }
-   
+    
     func main() {
-       var n Naming
-       var s Student
-       n = s
-       n.SetName("some name")   
+        var (
+            naming Naming
+            student Student
+        )
+        naming = student
+        naming.SetName("some name")
     }
     ```
-    请说明上述代码中是否存在问题或错误, 如无错误, 请说明代码含义; 如有错误, 请指出是编译错误还是运行时错误, 并以最少改动修改为正确代码. 
+    请说明上述代码中是否存在问题或错误, 如无错误, 请说明代码含义; 如有错误, 请指出是编译错误还是运行时错误, 并以最少改动修改为正确代码.
+    (注意请不要借助IDE等工具检查代码) 
 
 0. - Go语言中的`slice`类型和`map`类型是并发安全的吗? 如何理解Go语言中的"并发安全"?
 
