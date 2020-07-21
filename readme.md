@@ -141,4 +141,5 @@ channel, goroutine, context, reflex等Go语言核心特性；http客户端与服
 网易  
 
 ## 面试
-- [初级程序员Linux题](https://developer.aliyun.com/ask/274614?utm_content=g_1000109865)
+- [初级程序员Linux题](https://developer.aliyun.com/ask/274614?utm_content=g_1000109865) - 阿里云开发者社区 [黄一刀](https://developer.aliyun.com/profile/3oyn3fmurf66o?spm=a2c6h.13066369.0.0.6204250cJ2wWpA) 的文章
+- [Mysql面试题答案，助你“脱颖而出”](https://zhuanlan.zhihu.com/p/140876416) - 知乎 [寒星说Java](https://www.zhihu.com/people/han-xing-shuo-java) 的文章
