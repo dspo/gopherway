@@ -48,8 +48,8 @@ func f1() {
 	var b BMaker
 	b = new(cMaker)
 	_, okA := b.(AMaker)
-	_, okB := b.(CMaker)
-	fmt.Println(okA, okB)
+	_, okC := b.(CMaker)
+	fmt.Println(okA, okC)
 }
 
 func f2() {
