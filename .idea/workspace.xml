@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61844dd7-5c11-4845-a2be-193cffb6482f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/questions/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/questions/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/questions/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/questions/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/questions/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +64,22 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
+  <component name="RunManager">
+    <configuration name="go build github.com/dspo/gopherway/questions" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gopherway" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/questions/main.go" />
+      <package value="github.com/dspo/gopherway/questions" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build github.com/dspo/gopherway/questions" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="61844dd7-5c11-4845-a2be-193cffb6482f" name="Default Changelist" comment="" />
@@ -88,6 +103,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -106,5 +122,21 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="812" y="378" width="423" height="281" key="EnvironmentVariablesDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1594950627586" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1595298181775">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1595298181775" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1595298181775">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1595298181775" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1595298181775">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1595298181775" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1595298181775">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1595298181775" />
   </component>
 </project>
