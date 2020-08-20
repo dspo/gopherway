@@ -21,7 +21,50 @@ Go语言基本语法
 ## [Go语言开发工程师千千问](questions)
 
 ## [设计模式 Go与Python语言描述](go-design-patterns)
-更新中
+    
+- 创建模式    
+    - [Singleton - 单例模式](docs/01-singleton-design-pattern.md)
+    - [Builder - 构造者模式](docs/02-builder-design-pattern.md)
+    - [Factory - 工厂方法模式](docs/03-factory-design-pattern.md)
+    - Abstract factory
+
+- 结构化模式(一)
+    - Composite
+    - Adapter
+    - Bridge
+    
+- 结构化模式(二)
+    - Proxy
+    - Facade
+    - Decorator
+    - Flyweight
+    
+- 行为模式(一)
+    - Strategy
+    - Chain of Responsibility
+    - Command
+    
+- 行为模式(二)
+    - Template
+    - Memento
+    - Interpreter
+    
+- 行为模式(三)
+    - Visitor
+    - State
+    - Mediator
+    - Observer
+    
+- Go语言并发简介
+
+- 并发模式(一)
+    - Barrier
+    - Future
+    - Pipeline                    
+    
+- 并发模式(二)
+    - Worker Pool
+    - Publish/Subscriber    
 
 ## Learning source 资源
 ### 入门
@@ -54,7 +97,7 @@ Go语言基本语法
     * [astaxie/beego](github.com/astaxie/beego) <- Go语言中的Django, 一站式Web开发框架  
     * [gorilla/websocket](https://github.com/gorilla/websocket) 流行的第三方websocket库
     - [nhooyr.io/websocket](https://nhooyr.io/websocket) 流行的websocket库
-    - [golang.org/x/net/websocket](http://golang.org/x/net/websocket) ~~官方维护的websocket库~~
+    - [~~golang.org/x/net/websocket~~](http://golang.org/x/net/websocket) ~~官方维护的websocket库~~
     * [caddyserver/caddy](https://github.com/caddyserver/caddy) 支持HTTP/2、原生支持HTTPS的**Web服务器**  
     * [micro/go-micro](https://github.com/micro/go-micro) 微服务开发框架 | 资料: [go-micro 最佳实践](https://github.com/micro-in-cn/all-in-one), [go-micro 特性全合一教程](https://github.com/micro-in-cn/tutorials)
     * [prometheus/prometheus](https://github.com/prometheus/prometheus) 系统与时间序列数据库监控管理工具 
