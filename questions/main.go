@@ -61,6 +61,9 @@ func f2() {
 }
 
 func main() {
+	var a  = 1.0
+	var b  = 0.9
+	fmt.Println(a-b == 1.0-0.9, a-b, 1.0-0.9)
 	f1()
 	f2()
 }
